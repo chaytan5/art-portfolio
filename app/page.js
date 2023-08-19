@@ -1,79 +1,54 @@
-import Image from "next/image";
-import heroBg from "@/assets/images/hero-bg.png";
+import PrimaryButton from "@/components/PrimaryButton";
 import Link from "next/link";
+import hexagon from "@/assets/svgs/hexagon.svg";
+import Image from "next/image";
+import Nav from "@/components/Nav";
+import Divider from "@/components/Divider";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
   return (
     <>
-      <header className="font-body">
-        {/* <div
-        className="absolute left-0 top-0 -z-10 min-h-[900px] bg-cover bg-center opacity-40"
-        style={{
-          backgroundImage: `url(${heroBg.src})`,
-          width: "100%",
-          height: "100%",
-        }}
-      ></div> */}
+      <header className="bg-headerBg2 relative h-fit min-h-[1080px] w-full bg-black bg-cover bg-center bg-no-repeat">
+        {/** Top Nav Gradient*/}
+        <div className="absolute top-0 z-0 min-h-[450px] w-full bg-gradient-to-b from-black/90 "></div>
 
-        <div
-          className="relative -z-10 min-h-screen w-full bg-black bg-cover bg-center py-40 text-center opacity-30"
-          style={{
-            backgroundImage: `url(${heroBg.src})`,
-            width: "100%",
-            height: "100%",
-          }}
-        ></div>
-        <div className=""></div>
+        {/** Header end gradient */}
+        <div className="absolute top-[450px] z-0 min-h-[630px] w-full bg-gradient-to-b from-transparent from-60% to-black/90"></div>
 
-        <nav className="absolute inset-0 z-10 h-fit">
-          <div className="mx-auto flex w-11/12 max-w-7xl items-center justify-between py-8 text-lg">
-            <div>Neha Rastogi</div>
-            <div>
-              <ul className="flex items-center gap-10">
-                <Link href={"/"}>
-                  <li className="cursor-pointer">Home</li>
-                </Link>
-                <Link href={"/work"}>
-                  <li className="cursor-pointer">Work</li>
-                </Link>
-                <li className="cursor-pointer">About</li>
-                <li className="cursor-pointer">Contact</li>
-              </ul>
+        <Nav />
+        <div className="w-full pt-48">
+          <div className="bg-gold-40 bg-hero border-gold-90 before:border-gold-90 after:border-gold-90 relative mx-auto min-h-[600px]  w-4/5 max-w-6xl border bg-cover bg-center bg-no-repeat before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border ">
+            <div className="relative z-10">
+              <Image
+                src={hexagon}
+                alt="hexagon icon"
+                className="hexagon-clip absolute left-1/2 top-1/2  mx-auto -translate-x-1/2 -translate-y-1/2 backdrop-blur"
+              />
+              <p className="from-gold-90 to-yellow absolute left-1/2 top-1/2 mx-auto -translate-x-1/2 -translate-y-1/2 place-items-center bg-gradient-to-b bg-clip-text text-2xl font-semibold uppercase tracking-widest text-transparent">
+                art designer
+              </p>
             </div>
-          </div>
-        </nav>
-        <div className="absolute left-0 top-0 z-0 mx-auto w-full pt-64">
-          <div className="mx-auto w-fit text-center">
-            <h1 className="font-display mx-auto w-fit bg-gradient-to-r  from-blue-400 to-pink-400 bg-clip-text py-4 text-7xl font-extrabold text-transparent outline drop-shadow-2xl">
-              Neha Rastogi
-            </h1>
-            <h2 className="text-5xl font-bold text-gray-200">
-              Unleashing the magic of Creativity
-            </h2>
-            {/* <button className="pt-10">
-              <Link
-                href="/work"
-                class="group relative inline-block items-center justify-center overflow-hidden rounded-lg p-4 px-5 py-3 text-xl font-medium text-indigo-600 shadow-2xl"
-              >
-                <span class="ease absolute left-0 top-0 -ml-3 -mt-10 h-40 w-40 rounded-full bg-red-500 blur-md transition-all duration-700"></span>
-                <span class="ease absolute inset-0 h-full w-full transition duration-700 group-hover:rotate-180">
-                  <span class="absolute bottom-0 left-0 -ml-10 h-24 w-24 rounded-full bg-purple-500 blur-md"></span>
-                  <span class="absolute bottom-0 right-0 -mr-10 h-24 w-24 rounded-full bg-pink-500 blur-md"></span>
-                </span>
-                <span class="relative text-white">Explore my Work</span>
-              </Link>
-            </button> */}
-            <button
-              type="button"
-              className="mt-12 rounded-full bg-gradient-to-br from-blue-700 to-teal-600 px-6 py-4 text-center text-xl font-normal text-white transition-all hover:outline hover:outline-offset-2 hover:outline-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-500"
-            >
-              Explore my Work
-            </button>
+            <div className="absolute -bottom-12 z-10 w-full text-center">
+              <PrimaryButton>Take a tour</PrimaryButton>
+            </div>
           </div>
         </div>
       </header>
-      <main>
-        <div className="py-40">New section</div>
+      <main className="bg-headerBg relative min-h-[1080px] w-full bg-cover bg-center bg-no-repeat">
+        <div className="absolute top-0 min-h-full w-full bg-gradient-to-b from-black/90 from-60% to-transparent  "></div>
+        <div className="relative top-0 z-10 mx-auto w-11/12 max-w-7xl">
+          <div className="absolute -top-16 left-1/2  w-full -translate-x-1/2 -translate-y-1/2 text-center">
+            <h1 className="from-gold-90 to-yellow bg-gradient-to-b bg-clip-text text-5xl uppercase tracking-widest text-transparent">
+              My Art Collections
+            </h1>
+          </div>
+
+          <Divider />
+
+          {/* carousel */}
+          <Carousel />
+        </div>
       </main>
     </>
   );
