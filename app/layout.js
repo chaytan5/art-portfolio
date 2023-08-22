@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${limelight.variable} ${meddon.variable} ${marcellus.variable} ${marc.variable} scroll-smooth`}
     >
-      <body className="text-gold-90 font-marcellus">{children}</body>
+      <body className="font-marcellus">{children}</body>
     </html>
   );
 }
