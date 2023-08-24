@@ -19,7 +19,7 @@ const Nav = () => {
   return (
     <nav className="absolute top-0 z-10 w-full">
       <div
-        className={`mx-auto flex w-11/12 max-w-7xl items-center justify-between py-8 text-xl ${
+        className={`mx-auto flex w-11/12 max-w-screen-2xl items-center justify-between py-8 text-xl ${
           isHome ? "text-gold-90" : "text-gold-40"
         } `}
       >

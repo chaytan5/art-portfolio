@@ -25,6 +25,9 @@ module.exports = {
         headerBg2: "url('~/assets/images/header2.png')",
         hero: "url('~/assets/images/hero.png')",
       },
+      screens: {
+        "8xl": "1440px",
+      },
     },
   },
   plugins: [],

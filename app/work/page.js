@@ -14,8 +14,9 @@ export default function Work() {
         {/* <div className="relative mx-auto w-11/12 max-w-7xl"> */}
         <Tabs />
         {/* </div> */}
-        <section className="mx-auto w-11/12 max-w-7xl">
+        <section className="max-w-screen-8xl mx-auto w-11/12">
           <div className="py-20">
+            {/* <Gallery /> */}
             <EnvironmentsGallery />
           </div>
         </section>
