@@ -26,7 +26,7 @@ module.exports = {
         hero: "url('~/assets/images/hero.png')",
       },
       screens: {
-        "8xl": "1440px",
+        "1.5xl": "1440px",
       },
     },
   },

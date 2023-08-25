@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <div className="absolute -bottom-12 z-10 w-full text-center">
               <Link href={"/work"}>
-                <PrimaryButton>Take a tour</PrimaryButton>
+                <PrimaryButton>View Portfolio</PrimaryButton>
               </Link>
             </div>
           </div>
