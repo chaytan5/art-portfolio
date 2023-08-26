@@ -1,12 +1,16 @@
 import Image from "next/image";
 import eyeIcon from "@/assets/svgs/eye.svg";
+import { useLightboxContext } from "@/contexts/lightbox-context";
 
-const NextImage = ({ imgData: { height, width, src, alt } }) => {
+const NextImage = ({ imgData: { height, width, src, alt, key } }) => {
+  const { setIsLightboxOpen, setCurrentIndex } = useLightboxContext();
   return (
     <div
       className={`max-w-[${width}px] relative cursor-pointer overflow-hidden rounded-sm shadow-sm`}
       onClick={() => {
         console.log("clicked");
+        setCurrentIndex(key - 1);
+        setIsLightboxOpen(true);
       }}
     >
       <Image
