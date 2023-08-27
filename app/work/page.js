@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import EnvironmentsGallery from "@/components/EnvironmentsGallery";
 import IllustrationGallery from "@/components/IllustrationGallery";
@@ -9,13 +9,17 @@ import SketchGallery from "@/components/SketchGallery";
 import Tabs from "@/components/Tabs";
 import TraditionalGallery from "@/components/TraditionalGallery";
 import environmentPhotos from "@/constants/environmentImageData";
+import { useLightboxContext } from "@/contexts/lightbox-context";
 
-import NextImageLightbox from "@/components/NextImageLightbox";
 import Lightbox from "yet-another-react-lightbox";
+import NextImageLightbox from "@/components/NextImageLightbox";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import { useLightboxContext } from "@/contexts/lightbox-context";
+import "yet-another-react-lightbox/plugins/counter.css";
 
 function CurrentGallery({ currentTab }) {
   if (currentTab === "environment") return <EnvironmentsGallery />;
@@ -30,6 +34,7 @@ export default function Work() {
   const [currentTab, setCurrentTab] = useState("environment");
   const { isLightboxOpen, setIsLightboxOpen, currentIndex, setCurrentIndex } =
     useLightboxContext();
+
   return (
     <>
       <div className="absolute top-0 -z-10 w-full bg-neutral-100">
@@ -41,7 +46,7 @@ export default function Work() {
           {/* <div className="relative mx-auto w-11/12 max-w-7xl"> */}
           <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
           {/* </div> */}
-          <section className="max-w-screen-1.5xl mx-auto w-11/12">
+          <section className="mx-auto w-11/12 max-w-screen-1.5xl">
             <div className="py-20">
               <CurrentGallery currentTab={currentTab} />
             </div>
@@ -57,8 +62,14 @@ export default function Work() {
         }}
         slides={environmentPhotos}
         render={{ slide: NextImageLightbox }}
-        plugins={[Thumbnails]}
-        carousel={2}
+        plugins={[Thumbnails, Zoom, Fullscreen, Counter]}
+        carousel={{
+          finite: true,
+          preload: 5,
+        }}
+        counter={{
+          container: { style: { color: "#E9D2B2" } },
+        }}
       />
     </>
   );
