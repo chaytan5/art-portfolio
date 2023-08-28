@@ -31,7 +31,7 @@ export default function Home() {
             </div> */}
             <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-black/70 to-60%">
               <div className="flex h-full flex-col items-center justify-end gap-y-6 px-4 pb-20 text-center">
-                <h1 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-[44px] font-bold uppercase tracking-widest text-transparent">
+                <h1 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-3xl font-bold uppercase tracking-widest text-transparent">
                   Concept design / illustration
                 </h1>
                 <h2 className="max-w-xl text-lg">
