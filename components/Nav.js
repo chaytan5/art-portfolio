@@ -17,11 +17,13 @@ const Nav = () => {
   }, [path]);
 
   return (
-    <nav className="absolute top-0 z-10 w-full">
+    <nav
+      className={`${!isHome && "bg-black"}  ${
+        isHome && "absolute top-0 z-10"
+      } w-full`}
+    >
       <div
-        className={`max-w-screen-1.5xl mx-auto flex w-11/12 items-center justify-between py-8 text-xl ${
-          isHome ? "text-gold-90" : "text-gold-40"
-        } `}
+        className={`mx-auto flex w-11/12 max-w-screen-1.5xl items-center justify-between py-8 text-xl text-gold-90 `}
       >
         <Link href={"/"} className="font-marc text-4xl">
           Neha Rastogi

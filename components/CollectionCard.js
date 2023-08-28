@@ -3,7 +3,7 @@ import React from "react";
 
 const CollectionCard = ({ title, description, image }) => {
   return (
-    <div className="border-gold-40 before:border-gold-40 after:border-gold-40 relative mx-auto mb-14 mt-8 max-w-[500px] cursor-grab border bg-black before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border xl:ml-10">
+    <div className="relative mx-auto mb-14 mt-8 max-w-[500px] cursor-pointer border border-gold-40 bg-black before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border before:border-gold-40 after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border after:border-gold-40 xl:ml-10">
       <div className="min-h-[250px] max-w-full">
         <Image
           width={500}

@@ -32,7 +32,7 @@ const Carousel = () => {
     ),
     customPaging: () => (
       <div
-        className={`border-gold-90 h-4 w-4 rotate-45 cursor-pointer border`}
+        className={`h-4 w-4 rotate-45 cursor-pointer border border-gold-90`}
       ></div>
     ),
   };
@@ -50,7 +50,7 @@ const Carousel = () => {
       >
         <Image src={arrowIcon} alt="Next button" />
       </div>
-      <Slider className="mx-16" ref={sliderRef} {...carouselSettings}>
+      <Slider className="mx-8 md:mx-32" ref={sliderRef} {...carouselSettings}>
         {collections.map((data) => (
           <CollectionCard key={data.id} {...data} />
         ))}

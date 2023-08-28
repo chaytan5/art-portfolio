@@ -20,6 +20,7 @@ import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
+import Footer from "@/components/Footer";
 
 function CurrentGallery({ currentTab }) {
   if (currentTab === "environment") return <EnvironmentsGallery />;
@@ -37,15 +38,10 @@ export default function Work() {
 
   return (
     <>
-      <div className="absolute top-0 -z-10 w-full bg-neutral-100">
+      <div className=" w-full bg-neutral-100">
         <Nav />
-
-        {/* <div className="absolute left-0 top-0 -z-10 h-[250px] w-full bg-gradient-to-b from-black/80"></div> */}
-
-        <main className="relative top-32 pb-32">
-          {/* <div className="relative mx-auto w-11/12 max-w-7xl"> */}
+        <main className="relative top-14 pb-32">
           <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
-          {/* </div> */}
           <section className="mx-auto w-11/12 max-w-screen-1.5xl">
             <div className="py-20">
               <CurrentGallery currentTab={currentTab} />
@@ -53,6 +49,7 @@ export default function Work() {
           </section>
         </main>
       </div>
+      <Footer />
       <Lightbox
         index={currentIndex}
         open={isLightboxOpen}
@@ -68,7 +65,7 @@ export default function Work() {
           preload: 5,
         }}
         counter={{
-          container: { style: { color: "#E9D2B2" } },
+          container: {},
         }}
       />
     </>
