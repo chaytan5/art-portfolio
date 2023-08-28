@@ -4,7 +4,7 @@ import NextImage from "./NextImage";
 
 const EnvironmentsGallery = ({ openLightbox }) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-8">
       <div className="flex w-full gap-4 ">
         <NextImage imgData={environmentPhotos[0]} />
         <div className="space-y-4">
