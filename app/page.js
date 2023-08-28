@@ -17,9 +17,9 @@ export default function Home() {
         <div className="absolute top-[450px] z-0 min-h-[630px] w-full bg-gradient-to-b from-transparent from-60% to-black/90"></div>
 
         <Nav />
-        <div className="w-full pt-48 ">
+        <div className="w-full pt-48">
           <div className="relative mx-auto min-h-[600px] w-4/5 max-w-6xl border border-gold-90 bg-gold-40  bg-hero bg-cover bg-center bg-no-repeat before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border before:border-gold-90 after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border after:border-gold-90 ">
-            <div className="relative z-10">
+            {/* <div className="relative z-10">
               <Image
                 src={hexagon}
                 alt="hexagon icon"
@@ -28,6 +28,20 @@ export default function Home() {
               <p className="absolute left-1/2 top-1/2 mx-auto -translate-x-1/2 -translate-y-1/2 place-items-center bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-2xl font-semibold uppercase tracking-widest text-transparent">
                 art designer
               </p>
+            </div> */}
+            <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-black/70 to-60%">
+              <div className="flex h-full flex-col items-center justify-end gap-y-6 px-4 pb-20 text-center">
+                <h1 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-5xl uppercase tracking-widest text-transparent">
+                  Concept design / illustration
+                </h1>
+                <h2 className="max-w-xl text-lg">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Itaque nihil mollitia qui explicabo veniam inventore hic odio,
+                  officiis possimus autem accusamus libero, quas labore
+                  veritatis delectus laboriosam architecto molestiae?
+                  Voluptatibus.
+                </h2>
+              </div>
             </div>
             <div className="absolute -bottom-12 z-10 w-full text-center">
               <Link href={"/work"}>
@@ -41,9 +55,9 @@ export default function Home() {
         <div className="absolute top-0 min-h-full w-full bg-gradient-to-b from-black/90 from-60% to-transparent"></div>
         <div className="relative top-0 z-10 mx-auto w-11/12 max-w-7xl">
           <div className="absolute -top-16 left-1/2  w-full -translate-x-1/2 -translate-y-1/2 text-center">
-            <h1 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-5xl uppercase tracking-widest text-transparent">
+            <h2 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-[42px] uppercase tracking-widest text-transparent">
               My Art Collections
-            </h1>
+            </h2>
           </div>
 
           <Divider />
