@@ -32,7 +32,10 @@ export default function NextImageLightbox({ slide, rect }) {
     : rect.height;
 
   return (
-    <div className="max-w-full" style={{ position: "relative", width, height }}>
+    <div
+      className="ml-auto max-w-full"
+      style={{ position: "relative", width, height }}
+    >
       <Image
         fill
         className="h-auto max-w-full"

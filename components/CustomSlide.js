@@ -4,7 +4,7 @@ import NextImageLightbox from "./NextImageLightbox";
 const CustomSlide = ({ slide, rect }) => {
   return (
     <div className=" mt-auto flex h-[95%] w-full justify-between gap-4">
-      <div className="ml-auto max-w-[70%]">
+      <div className=" min-w-[50%] max-w-[70%]">
         <NextImageLightbox slide={slide} rect={rect} />
       </div>
       <div className="flex w-[30%] grow flex-col justify-between">

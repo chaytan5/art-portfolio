@@ -8,7 +8,6 @@ const NextImage = ({ imgData: { height, width, src, alt, key } }) => {
     <div
       className={`max-w-[${width}px] relative cursor-pointer overflow-hidden rounded-sm shadow-sm`}
       onClick={() => {
-        console.log("clicked");
         setCurrentIndex(key - 1);
         setIsLightboxOpen(true);
       }}

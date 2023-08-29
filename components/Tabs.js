@@ -4,40 +4,40 @@ const Tabs = ({ currentTab, setCurrentTab }) => {
       <div
         onClick={() => setCurrentTab("environment")}
         className={`${
-          currentTab == "environment" && "border-yellow bg-black"
-        } cursor-pointer rounded-sm border border-gold-90 px-4 py-2 transition hover:bg-black/60`}
+          currentTab == "environment" && "border-gold-90 bg-black"
+        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
         Environment & Worldbuilding
       </div>
       <div
         onClick={() => setCurrentTab("sketch")}
         className={`${
-          currentTab == "sketch" && "border-yellow bg-black"
-        } cursor-pointer rounded-sm border border-gold-90 px-4 py-2 transition hover:bg-black/60`}
+          currentTab == "sketch" && "border-gold-90 bg-black"
+        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
         Sketches & Roughs
       </div>
       <div
         onClick={() => setCurrentTab("illustration")}
         className={`${
-          currentTab == "illustration" && "border-yellow bg-black"
-        } cursor-pointer rounded-sm border border-gold-90 px-4 py-2 transition hover:bg-black/60`}
+          currentTab == "illustration" && "border-gold-90 bg-black"
+        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
         Stylized Illustrations
       </div>
       <div
         onClick={() => setCurrentTab("traditional")}
         className={`${
-          currentTab == "traditional" && "border-yellow bg-black"
-        } cursor-pointer rounded-sm border border-gold-90 px-4 py-2 transition hover:bg-black/60`}
+          currentTab == "traditional" && "border-gold-90 bg-black"
+        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
         Traditional
       </div>
       <div
         onClick={() => setCurrentTab("projects")}
         className={`${
-          currentTab == "projects" && "border-yellow bg-black"
-        } cursor-pointer rounded-sm border border-gold-90 px-4 py-2 transition hover:bg-black/60`}
+          currentTab == "projects" && "border-gold-90 bg-black"
+        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
         Projects
       </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import environmentPhotos from "@/constants/environmentImageData";
 import NextImage from "./NextImage";
 
