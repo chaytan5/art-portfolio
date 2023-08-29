@@ -32,10 +32,12 @@ export default function NextImageLightbox({ slide, rect }) {
     : rect.height;
 
   return (
-    <div style={{ position: "relative", width, height }}>
+    <div className="max-w-full" style={{ position: "relative", width, height }}>
       <Image
         fill
+        className="h-auto max-w-full"
         alt=""
+        quality={100}
         src={slide}
         loading="eager"
         draggable={false}

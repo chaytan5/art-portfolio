@@ -15,12 +15,12 @@ import Lightbox from "yet-another-react-lightbox";
 import NextImageLightbox from "@/components/NextImageLightbox";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import Footer from "@/components/Footer";
+import CustomSlide from "@/components/CustomSlide";
 
 function CurrentGallery({ currentTab }) {
   if (currentTab === "environment") return <EnvironmentsGallery />;
@@ -58,15 +58,16 @@ export default function Work() {
           setIsLightboxOpen(false);
         }}
         slides={environmentPhotos}
-        render={{ slide: NextImageLightbox }}
-        plugins={[Thumbnails, Zoom, Fullscreen, Counter]}
+        render={{
+          slide: ({ slide, rect }) => <CustomSlide slide={slide} rect={rect} />,
+        }}
+        plugins={[Thumbnails, Fullscreen, Counter]}
         carousel={{
           finite: true,
           preload: 5,
         }}
-        counter={{
-          container: {},
-        }}
+        thumbnails={{ borderRadius: 2 }}
+        counter={{}}
       />
     </>
   );
