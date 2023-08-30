@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { useLightboxContext } from "@/contexts/lightbox-context";
 
 import EnvironmentsGallery from "@/components/EnvironmentsGallery";
-import Nav from "@/components/Nav";
 import ProjectsGallery from "@/components/ProjectsGallery";
 import SketchGallery from "@/components/SketchGallery";
 import Tabs from "@/components/Tabs";
@@ -11,7 +10,6 @@ import TraditionalGallery from "@/components/TraditionalGallery";
 import environmentPhotos from "@/constants/environmentImageData";
 import traditionalSketchesData from "@/constants/traditionalSketchesData";
 import stylizedIllustrationsData from "@/constants/stylizedIllustrationsData";
-import Footer from "@/components/Footer";
 import CustomSlide from "@/components/CustomSlide";
 import StylizedIllustrationGallery from "@/components/StylizedIllustrationGallery";
 
@@ -39,7 +37,7 @@ export default function Work() {
   const [currentLightboxData, setCurrentLightboxData] = useState(null);
 
   useEffect(() => {
-    (function setLightboxData() {
+    (function () {
       switch (currentTab) {
         case "environment":
           setCurrentLightboxData(environmentPhotos);
@@ -60,7 +58,6 @@ export default function Work() {
   return (
     <>
       <div className="w-full bg-neutral-100">
-        <Nav />
         <main className="relative top-14 pb-32">
           <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
           <section className="mx-auto w-11/12 max-w-screen-1.5xl">
@@ -70,7 +67,6 @@ export default function Work() {
           </section>
         </main>
       </div>
-      <Footer />
       <Lightbox
         index={currentIndex}
         open={isLightboxOpen}

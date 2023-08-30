@@ -1,19 +1,8 @@
 import PrimaryButton from "@/components/PrimaryButton";
 import Link from "next/link";
-import hexagon from "@/assets/svgs/hexagon.svg";
-import Image from "next/image";
-import Nav from "@/components/Nav";
 import Divider from "@/components/Divider";
 import Carousel from "@/components/Carousel";
 import ContactForm from "@/components/ContactForm";
-import {
-  FaArtstation,
-  FaDiscord,
-  FaHeart,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa6";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,13 +10,13 @@ export default function Home() {
     <>
       <header className="relative h-fit min-h-[1080px] w-full bg-black bg-headerBg2 bg-cover bg-center bg-no-repeat text-gold-90">
         {/** Top Nav Gradient*/}
-        <div className="absolute top-0 z-0 min-h-[450px] w-full bg-gradient-to-b from-black/90 "></div>
+        <div className="absolute top-0 z-0 min-h-[300px] w-full bg-gradient-to-b from-black/95 "></div>
 
         {/** Header end gradient */}
         <div className="absolute top-[450px] z-0 min-h-[630px] w-full bg-gradient-to-b from-transparent from-60% to-black/90"></div>
 
-        <Nav />
-        <div className="w-full pt-48">
+        {/* <Nav /> */}
+        <div className="w-full pt-20">
           <div className="relative mx-auto min-h-[600px] w-4/5 max-w-6xl border border-gold-90 bg-gold-40  bg-hero bg-cover bg-center bg-no-repeat before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border before:border-gold-90 after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border after:border-gold-90 ">
             {/* <div className="relative z-10">
               <Image
@@ -89,7 +78,6 @@ export default function Home() {
           <Divider />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative grid h-64 w-full place-items-center bg-black">
+    <footer className="relative bottom-0 grid h-64 w-full place-items-center bg-black">
       <div className="mx-auto flex w-11/12 max-w-screen-xl items-baseline justify-between text-gold-90">
         <Link href={"/"} className="font-marc text-4xl">
           Neha Rastogi

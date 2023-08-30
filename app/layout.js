@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Limelight, Meddon, Marcellus, Marck_Script } from "next/font/google";
 import LightboxContextProvider from "@/contexts/lightbox-context";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const limelight = Limelight({
   subsets: ["latin"],
@@ -38,7 +40,9 @@ export default function RootLayout({ children }) {
       className={`${limelight.variable} ${meddon.variable} ${marcellus.variable} ${marc.variable} scroll-smooth`}
     >
       <body className="font-marcellus">
+        <Nav />
         <LightboxContextProvider>{children}</LightboxContextProvider>
+        <Footer />
       </body>
     </html>
   );

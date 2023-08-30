@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const Nav = () => {
   const path = usePathname();
-  const [isHome, setIsHome] = useState();
+  const [isHome, setIsHome] = useState(true);
 
   useEffect(() => {
     if (path === "/") {
@@ -17,9 +17,7 @@ const Nav = () => {
   }, [path]);
 
   return (
-    <nav
-      className={`${isHome ? "absolute top-0 z-10" : "static bg-black"} w-full`}
-    >
+    <nav className={` relative z-10 w-full bg-black`}>
       <div
         className={`mx-auto flex w-11/12 max-w-screen-1.5xl items-center justify-between py-8 text-xl text-gold-90 `}
       >
