@@ -7,23 +7,7 @@ const Tabs = ({ currentTab, setCurrentTab }) => {
           currentTab == "environment" && "border-gold-90 bg-black"
         } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
-        Environment & Worldbuilding
-      </div>
-      <div
-        onClick={() => setCurrentTab("sketch")}
-        className={`${
-          currentTab == "sketch" && "border-gold-90 bg-black"
-        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
-      >
-        Sketches & Roughs
-      </div>
-      <div
-        onClick={() => setCurrentTab("illustration")}
-        className={`${
-          currentTab == "illustration" && "border-gold-90 bg-black"
-        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
-      >
-        Stylized Illustrations
+        Environments & Worldbuilding
       </div>
       <div
         onClick={() => setCurrentTab("traditional")}
@@ -31,8 +15,25 @@ const Tabs = ({ currentTab, setCurrentTab }) => {
           currentTab == "traditional" && "border-gold-90 bg-black"
         } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
-        Traditional
+        Traditional Art
       </div>
+      <div
+        onClick={() => setCurrentTab("sketch")}
+        className={`${
+          currentTab == "sketch" && "border-gold-90 bg-black"
+        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
+      >
+        Sketches
+      </div>
+      <div
+        onClick={() => setCurrentTab("illustration")}
+        className={`${
+          currentTab == "illustration" && "border-gold-90 bg-black"
+        } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
+      >
+        Digital Illustrations
+      </div>
+
       <div
         onClick={() => setCurrentTab("projects")}
         className={`${

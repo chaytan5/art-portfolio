@@ -6,14 +6,14 @@ const NextImage = ({ imgData: { height, width, src, alt, key } }) => {
   const { setIsLightboxOpen, setCurrentIndex } = useLightboxContext();
   return (
     <div
-      className={`max-w-[${width}px] relative cursor-pointer overflow-hidden rounded-sm shadow-sm`}
+      className={`max-w-[${width}px] relative cursor-pointer rounded-sm`}
       onClick={() => {
         setCurrentIndex(key - 1);
         setIsLightboxOpen(true);
       }}
     >
       <Image
-        className="max-w-full transition duration-300 ease-in-out hover:scale-105"
+        className="max-w-full transition duration-300 ease-in-out"
         src={src}
         alt={alt}
         width={width}
