@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+
+  .hexagon-clip {
+    clip-path: polygon(10% 0px, 90% 0px, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  }
+
+  .hexagon-clip-inner {
+    clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
+  }
+
+  .dots-list>.slick-active>div {
+    background-color: #E9D2B2;
+  }
+}
+
+/* 
+html {
+  background-color: black;
+} */
