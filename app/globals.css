@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer utilities {
 
@@ -166,8 +170,8 @@ body {
 }
 
 p {
-  font-family: "Brush Script MT", cursive;
-  margin: 40px;
+  /* font-family: 'Courgette', cursive; */
+  margin: 30px;
   color: #333;
 }
 
@@ -179,10 +183,12 @@ p {
 }
 
 .back {
-  font-family: Tahoma, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333;
   text-align: center;
   margin: 30px;
   outline-color: #333;
   outline-style: dotted;
+  outline-offset: 5px;
+  font-weight: 500;
 }
