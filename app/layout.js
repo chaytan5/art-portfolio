@@ -5,6 +5,7 @@ import { Meddon, Marcellus, Marck_Script } from "next/font/google";
 import LightboxContextProvider from "@/contexts/lightbox-context";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BirthdayCard from "@/components/BirthdayCard";
 
 const meddon = Meddon({
   subsets: ["latin"],
@@ -35,9 +36,10 @@ export default function RootLayout({ children }) {
       className={`${meddon.variable} ${marcellus.variable} ${marc.variable} scroll-smooth`}
     >
       <body className="font-marcellus">
-        <Nav />
+        {/* <Nav />
         <LightboxContextProvider>{children}</LightboxContextProvider>
-        <Footer />
+        <Footer /> */}
+        <BirthdayCard />
       </body>
     </html>
   );
