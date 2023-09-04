@@ -13,20 +13,20 @@ const Carousel = () => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
     ],
     appendDots: (dots) => (
-      <div className="absolute -bottom-12 mx-auto flex w-full ">
+      <div className="absolute -bottom-12 mx-auto flex w-full">
         <ul className="dots-list mx-auto">{dots}</ul>
       </div>
     ),
@@ -50,7 +50,7 @@ const Carousel = () => {
       >
         <Image src={arrowIcon} alt="Next button" />
       </div>
-      <Slider className="mx-8 md:mx-32" ref={sliderRef} {...carouselSettings}>
+      <Slider className="mx-8 md:mx-10" ref={sliderRef} {...carouselSettings}>
         {collections.map((data) => (
           <CollectionCard key={data.id} {...data} />
         ))}

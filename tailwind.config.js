@@ -12,6 +12,8 @@ module.exports = {
         meddon: ["var(--font-meddon)"],
         marcellus: ["var(--font-marcellus)"],
         marc: ["var(--font-marc)"],
+        slagless: ["slagless", "cursive"],
+        trap: ["trap", "sans-serif"],
       },
       colors: {
         "gold-90": "#E9D2B2",
