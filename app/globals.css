@@ -25,6 +25,10 @@
     clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
   }
 
+  .hexagon-clip-inner-mobile {
+    clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0% 50%);
+  }
+
   .dots-list>.slick-active>div {
     background-color: #E9D2B2;
   }
