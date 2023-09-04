@@ -9,7 +9,7 @@ const ContactForm = () => {
           Use the form below to drop me an email, or you can contact me directly
           at{" "}
           <a href="mailto:example@example.com" className="underline">
-            neha@artdesigner.com
+            mail@neharastogi.com
           </a>
         </p>
         <form className="space-y-4 py-6">

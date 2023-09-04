@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "slagless";
+  src: url("../public/fonts/slagless.ttf");
+}
+
+@font-face {
+  font-family: "trap";
+  src: url("../public/fonts/trap/Trap-Bold\ 700.otf");
+}
 
 @layer utilities {
 
@@ -26,15 +35,15 @@ html {
   background-color: black;
 } */
 
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: #073b4c;
-}
+} */
 
-.birthdayCard {
+/* .birthdayCard {
   position: relative;
   width: 250px;
   height: 350px;
@@ -170,16 +179,17 @@ body {
 }
 
 p {
-  /* font-family: 'Courgette', cursive; */
+  font-family: 'Courgette', cursive;
   margin: 30px;
   color: #333;
 }
-
+ 
 .name {
   position: absolute;
   left: 150px;
   top: 200px;
   color: #333;
+  padding-top: 20px;
 }
 
 .back {
@@ -191,4 +201,4 @@ p {
   outline-style: dotted;
   outline-offset: 5px;
   font-weight: 500;
-}
+} */

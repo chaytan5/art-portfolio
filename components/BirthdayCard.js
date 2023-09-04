@@ -17,7 +17,7 @@ const BirthdayCard = () => {
           Happy birthday!! I hope your day is filled with lots of love and
           laughter! May all of your birthday wishes come true.
         </p>
-        <p className="name pt-4">Harsh</p>
+        <p className="name">Harsh</p>
       </div>
     </div>
   );

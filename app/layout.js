@@ -35,11 +35,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${meddon.variable} ${marcellus.variable} ${marc.variable} scroll-smooth`}
     >
-      <body className="font-marc">
-        {/* <Nav />
+      <body className="font-marcellus">
+        <Nav />
         <LightboxContextProvider>{children}</LightboxContextProvider>
-        <Footer /> */}
-        <BirthdayCard />
+        <Footer />
       </body>
     </html>
   );

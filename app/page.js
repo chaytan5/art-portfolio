@@ -30,15 +30,18 @@ export default function Home() {
             </div> */}
             <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-black/70 to-60%">
               <div className="flex h-full flex-col items-center justify-end gap-y-6 px-4 pb-20 text-center">
-                <h1 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-3xl font-bold uppercase tracking-widest text-transparent">
-                  Concept design / illustration
+                <h1 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text font-marcellus text-4xl font-black uppercase tracking-widest text-transparent">
+                  Concept Designer & Illustrator
                 </h1>
+                {/* <h1 className="font-trap  text-white">
+                  Concept Designer & Illustrator
+                </h1> */}
                 <h2 className="max-w-xl text-lg">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Itaque nihil mollitia qui explicabo veniam inventore hic odio,
-                  officiis possimus autem accusamus libero, quas labore
-                  veritatis delectus laboriosam architecto molestiae?
-                  Voluptatibus.
+                  I create art for Games, Film & Animation with an emphasis on
+                  Environments & Worldbuilding. The professional projects
+                  I&apos;ve worked on have included responsibilities in Game UI,
+                  VFX Illustration, Keyframes, Card Art, Marketing Art & Concept
+                  art.
                 </h2>
               </div>
             </div>
@@ -57,8 +60,8 @@ export default function Home() {
         <div className="absolute bottom-0 min-h-[400px] w-full bg-gradient-to-b from-transparent  to-black/90"></div>
         <div className="relative top-0 z-10 mx-auto w-11/12 max-w-screen-1.5xl">
           <div className="absolute -top-16 left-1/2  w-full -translate-x-1/2 -translate-y-1/2 text-center">
-            <h2 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-[42px] uppercase tracking-widest text-transparent">
-              My Art Collections
+            <h2 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-4xl font-bold uppercase tracking-widest text-transparent">
+              Take a tour
             </h2>
           </div>
 
