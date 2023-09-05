@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute top-0 z-0 min-h-[300px] w-full bg-gradient-to-b from-black/95 "></div>
 
         {/** Header end gradient */}
-        <div className="absolute top-[450px] z-0 min-h-[420px] w-full bg-gradient-to-b from-transparent from-60% to-black/90 lg:min-h-[630px]"></div>
+        <div className="absolute top-[450px] z-0 min-h-[400px] w-full bg-gradient-to-b from-transparent from-60% to-black/90 lg:min-h-[630px]"></div>
 
         <div className="w-full pt-12 md:pt-20">
           <div className="relative mx-auto min-h-[500px] w-4/5 max-w-6xl border border-gold-90 bg-gold-40 bg-hero  bg-cover bg-center bg-no-repeat before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border before:border-gold-90 after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border after:border-gold-90 lg:min-h-[600px] ">
