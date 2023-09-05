@@ -29,7 +29,7 @@ export default function Home() {
               </p>
             </div> */}
             <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-black/80 to-60%">
-              <div className="flex h-full flex-col items-center justify-end gap-y-6 px-4 pb-10 text-center md:pb-20">
+              <div className="flex h-full flex-col items-center justify-end gap-y-6 px-4 pb-12 text-center md:pb-20">
                 <h1 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text font-marcellus text-3xl font-black uppercase tracking-widest text-transparent lg:text-4xl">
                   Concept Designer & Illustrator
                 </h1>
@@ -69,10 +69,8 @@ export default function Home() {
 
           {/* carousel */}
           <Carousel />
-          <section className="py-52">
-            <div className="mx-auto w-fit">
-              <ContactForm />
-            </div>
+          <section className="px-5 py-52">
+            <ContactForm />
           </section>
         </div>
       </main>

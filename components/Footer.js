@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full py-4 text-center">
+      <div className="w-full pb-4 text-center">
         <p className="text-sm text-gold-40">
           All rights reserved 2023 &copy; Neha Rastogi
         </p>
