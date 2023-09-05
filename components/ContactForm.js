@@ -2,7 +2,7 @@ const ContactForm = () => {
   return (
     <div className="relative mx-auto min-h-[200px] max-w-[550px] border border-gold-40 bg-black before:absolute before:-inset-x-5 before:-inset-y-2.5 before:-z-10 before:border before:border-gold-40 after:absolute after:-inset-x-2.5 after:-inset-y-5 after:-z-10 after:border after:border-gold-40">
       <div className="space-y-4 px-4 py-8 md:p-12">
-        <h3 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-center text-3xl uppercase tracking-widest text-transparent md:text-4xl">
+        <h3 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text pb-5 text-center text-3xl uppercase tracking-widest text-transparent md:text-4xl">
           Let&apos;s Talk
         </h3>
         <p className="text-center text-base text-gold-90 md:text-lg">
@@ -12,7 +12,7 @@ const ContactForm = () => {
             mail@neharastogi.com
           </a>
         </p>
-        <form className="space-y-4 py-6">
+        <form className="space-y-4 py-4 md:py-6">
           <input
             // onSubmit={contactFormHandler}
             type="text"
