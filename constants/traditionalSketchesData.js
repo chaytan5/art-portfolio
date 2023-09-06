@@ -1,4 +1,4 @@
-const url = "/traditional-sketches/";
+const url = "/traditional-sketches-highres/";
 
 const environmentPhotos = [
   { key: 1, src: "img1.png", width: 1440, height: 800, alt: "Some alt text" },

@@ -40,7 +40,7 @@ const Tabs = ({ currentTab, setCurrentTab }) => {
           currentTab == "projects" && "border-gold-90 bg-black"
         } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
-        Projects
+        Worldbuilding Projects
       </div>
     </div>
   );

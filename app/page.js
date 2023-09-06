@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
       <div className="relative h-fit  min-h-[850px] w-full bg-black bg-headerBg2 bg-cover bg-center bg-no-repeat text-gold-90 lg:min-h-[1080px]">
-        {/** Top Nav Gradient*/}
+        {/** Top Gradient*/}
         <div className="absolute top-0 z-0 min-h-[300px] w-full bg-gradient-to-b from-black/95 "></div>
 
-        {/** Header end gradient */}
+        {/** div end gradient */}
         <div className="absolute top-[450px] z-0 min-h-[400px] w-full bg-gradient-to-b from-transparent from-60% to-black/90 lg:min-h-[630px]"></div>
 
         <div className="w-full pt-12 md:pt-20">
