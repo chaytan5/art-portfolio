@@ -5,7 +5,7 @@ import { Meddon, Marcellus, Marck_Script } from "next/font/google";
 import LightboxContextProvider from "@/contexts/lightbox-context";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import BirthdayCard from "@/components/BirthdayCard";
+import TabsContextProvider from "@/contexts/tab-context";
 
 const meddon = Meddon({
   subsets: ["latin"],
@@ -37,7 +37,9 @@ export default function RootLayout({ children }) {
     >
       <body className="font-marcellus">
         <Nav />
-        <LightboxContextProvider>{children}</LightboxContextProvider>
+        <LightboxContextProvider>
+          <TabsContextProvider>{children}</TabsContextProvider>
+        </LightboxContextProvider>
         <Footer />
       </body>
     </html>

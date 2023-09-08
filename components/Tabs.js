@@ -1,4 +1,8 @@
-const Tabs = ({ currentTab, setCurrentTab }) => {
+"use client";
+import { useTabsContext } from "@/contexts/tab-context";
+
+const Tabs = () => {
+  const { currentTab, setCurrentTab } = useTabsContext();
   return (
     <div className="absolute top-0 z-10 mx-auto hidden w-fit flex-wrap gap-6 rounded-md border-2 border-gold-90 bg-black/80 px-6 py-3 text-gold-90 shadow-sm shadow-gold-90 backdrop-blur-sm md:sticky md:top-8 md:flex">
       <div
@@ -40,7 +44,7 @@ const Tabs = ({ currentTab, setCurrentTab }) => {
           currentTab == "projects" && "border-gold-90 bg-black"
         } cursor-pointer rounded-sm border-2 border-gold-40 px-4 py-2 transition hover:bg-black/60`}
       >
-        Projects
+        Worldbuilding Projects
       </div>
     </div>
   );

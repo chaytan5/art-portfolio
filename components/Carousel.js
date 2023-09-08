@@ -24,6 +24,13 @@ const Carousel = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 970,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
     appendDots: (dots) => (
       <div className="absolute -bottom-12 mx-auto flex w-full">
@@ -50,7 +57,11 @@ const Carousel = () => {
       >
         <Image src={arrowIcon} alt="Next button" />
       </div>
-      <Slider className="mx-8 md:mx-10" ref={sliderRef} {...carouselSettings}>
+      <Slider
+        className="mx-auto md:mx-10"
+        ref={sliderRef}
+        {...carouselSettings}
+      >
         {collections.map((data) => (
           <CollectionCard key={data.id} {...data} />
         ))}
