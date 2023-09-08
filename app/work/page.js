@@ -34,7 +34,6 @@ function CurrentGallery({ currentTab }) {
 }
 
 export default function Work() {
-  // const [currentTab, setCurrentTab] = useState("environment");
   const { currentTab } = useTabsContext();
   const { isLightboxOpen, setIsLightboxOpen, currentIndex, setCurrentIndex } =
     useLightboxContext();
@@ -60,6 +59,15 @@ export default function Work() {
           break;
       }
     })();
+
+    const goToTop = () => {
+      window.scrollTo({
+        top: 150,
+        behavior: "smooth",
+      });
+    };
+
+    goToTop();
   }, [currentTab]);
 
   return (
