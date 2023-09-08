@@ -2,10 +2,6 @@ import Image from "next/image";
 import eyeIcon from "@/assets/svgs/eye.svg";
 import { useLightboxContext } from "@/contexts/lightbox-context";
 
-const imageLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
-};
-
 const NextImage = ({ imgData: { height, width, src, alt, key } }) => {
   const { setIsLightboxOpen, setCurrentIndex } = useLightboxContext();
   return (
@@ -23,7 +19,7 @@ const NextImage = ({ imgData: { height, width, src, alt, key } }) => {
         alt={alt}
         width={width}
         height={height}
-        quality={100}
+        quality={95}
       />
       <div className="absolute inset-0 grid h-full w-full place-items-center overflow-hidden bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-70">
         <div className="rounded-full border-2 border-gold-90 p-4">
