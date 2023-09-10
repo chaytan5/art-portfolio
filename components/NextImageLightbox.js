@@ -45,6 +45,7 @@ export default function NextImageLightbox({ slide, rect }) {
         quality={95}
         src={slide.src}
         loading="eager"
+        priority
         draggable={false}
         style={{ objectFit: "contain" }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}

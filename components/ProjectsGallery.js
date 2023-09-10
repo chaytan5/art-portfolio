@@ -6,11 +6,11 @@ import projectsData from "@/constants/projectsData";
 const Project = ({ thumbnail, name, slug }) => {
   return (
     <Link href={`/project/${slug}`}>
-      <div className="relative h-72 max-w-full cursor-pointer rounded-md bg-neutral-200 object-cover shadow-md transition ease-in-out hover:shadow-2xl md:max-w-[400px]">
+      <div className="relative h-72 max-w-full cursor-pointer rounded-md border border-transparent bg-neutral-200 object-cover shadow-md transition ease-in-out hover:border-gold-40 hover:shadow-2xl md:max-w-[400px]">
         <Image
           src={thumbnail}
-          alt=""
-          className="h-full max-w-full rounded-md object-cover opacity-0 transition-opacity duration-700"
+          alt={name}
+          className="h-full max-w-full rounded-md object-cover opacity-0 transition-opacity duration-300"
           onLoadingComplete={(image) => image.classList.remove("opacity-0")}
         />
         <div className="absolute bottom-0 flex w-full items-center gap-2 rounded-b-md bg-black/30 p-2  text-sm text-white backdrop-blur">

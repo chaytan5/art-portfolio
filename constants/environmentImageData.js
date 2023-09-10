@@ -1,4 +1,4 @@
-const url = "/environment-worldbuilding-highres/";
+const url = "/environment-worldbuilding/";
 
 const environmentPhotos = [
   {

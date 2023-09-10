@@ -1,13 +1,17 @@
-import img1 from "@/assets/images/header.png";
-import img2 from "@/assets/images/header2.png";
-import img3 from "@/assets/images/hero.png";
+import galacticGardensImg from "@/assets/images/project-covers/galactic-gardens.png";
+import sporexImg from "@/assets/images/project-covers/sporex.png";
+import resurrectionimg from "@/assets/images/project-covers/resurrection.png";
+import miniShipImg from "@/assets/images/project-covers/mini-ship.png";
+import tailwindImg from "@/assets/images/project-covers/tailwind.jpg";
+import worldwarzImg from "@/assets/images/project-covers/worldwar-z.jpg";
+import guerillaHideoutImg from "@/assets/images/project-covers/guerilla-hideout.png";
 
 const projectsData = [
   {
     id: 1,
     name: "GALACTIC GARDENS: LOCATION EXPLORATION",
     slug: "galactic-gardens",
-    thumbnail: img1,
+    thumbnail: galacticGardensImg,
     images: [
       {
         id: 1,
@@ -75,7 +79,7 @@ const projectsData = [
     id: 2,
     name: "SPOREX: MAPS, LANDFORMS, WATERFALL",
     slug: "sporex",
-    thumbnail: img2,
+    thumbnail: sporexImg,
     images: [
       {
         id: 1,
@@ -125,7 +129,7 @@ const projectsData = [
     id: 3,
     name: "MINI-SHIP",
     slug: "mini-ship",
-    thumbnail: img3,
+    thumbnail: miniShipImg,
     images: [
       {
         id: 1,
@@ -151,7 +155,7 @@ const projectsData = [
     id: 4,
     name: "GUERILLA HIDEOUT: INTERIOR CONCEPT",
     slug: "guerilla-hideout",
-    thumbnail: img3,
+    thumbnail: guerillaHideoutImg,
     images: [
       {
         id: 1,
@@ -189,7 +193,7 @@ const projectsData = [
     id: 5,
     name: "RESURRECTION: SITE DEVELOPMENT & THUMBNAILS",
     slug: "resurrection",
-    thumbnail: img3,
+    thumbnail: resurrectionimg,
     images: [
       {
         id: 1,
@@ -239,7 +243,7 @@ const projectsData = [
     id: 6,
     name: "TAILWIND :  RACE TEAM SETS & VEHICLES",
     slug: "tailwind",
-    thumbnail: img3,
+    thumbnail: tailwindImg,
     images: [
       {
         id: 1,
@@ -289,7 +293,7 @@ const projectsData = [
     id: 7,
     name: "WORLDWAR Z : CHARACTER & VEHICLE CONCEPT",
     slug: "worldwar-z",
-    thumbnail: img3,
+    thumbnail: worldwarzImg,
     images: [
       {
         id: 1,
@@ -317,20 +321,20 @@ const projectsData = [
       },
     ],
   },
-  {
-    id: 8,
-    name: "NDA",
-    slug: "nda",
-    thumbnail: img3,
-    images: [
-      {
-        id: 1,
-        url: "",
-        width: 400,
-        height: 200,
-      },
-    ],
-  },
+  // {
+  //   id: 8,
+  //   name: "NDA",
+  //   slug: "nda",
+  //   thumbnail: img3,
+  //   images: [
+  //     {
+  //       id: 1,
+  //       url: "",
+  //       width: 400,
+  //       height: 200,
+  //     },
+  //   ],
+  // },
 ];
 
 export default projectsData;

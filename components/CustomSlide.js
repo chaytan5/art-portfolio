@@ -8,7 +8,7 @@ const CustomSlide = ({ slide, rect }) => {
 
       <div className="hidden min-w-[30%] flex-col gap-10 md:flex">
         <div className="space-y-4">
-          <h1 className="text-3xl font-bold text-neutral-100">Image Title</h1>
+          <h1 className="text-3xl font-bold text-neutral-100">{slide.title}</h1>
           <h3 className="max-w-[500px] text-lg text-neutral-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui
             deserunt sunt corporis iusto error impedit tempore hic perferendis?
