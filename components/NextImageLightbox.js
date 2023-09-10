@@ -31,8 +31,6 @@ export default function NextImageLightbox({ slide, rect }) {
       )
     : rect.height;
 
-  console.log(slide);
-
   return (
     <div
       className="ml-auto  max-w-full"
@@ -44,8 +42,7 @@ export default function NextImageLightbox({ slide, rect }) {
         alt=""
         quality={95}
         src={slide.src}
-        loading="eager"
-        priority
+        loading="lazy"
         draggable={false}
         style={{ objectFit: "contain" }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}

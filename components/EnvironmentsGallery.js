@@ -47,7 +47,7 @@ const EnvironmentsGallery = () => {
           <NextImage key={img.key} imgData={img} />
         ))}
       </div>
-      <div className="flex w-full flex-col gap-2 md:flex-row">
+      <div className="flex w-full flex-col gap-2 md:flex-row md:gap-1">
         {environmentPhotos.slice(22, 26).map((img) => (
           <NextImage key={img.key} imgData={img} />
         ))}
