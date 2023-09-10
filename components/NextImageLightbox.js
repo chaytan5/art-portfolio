@@ -31,6 +31,8 @@ export default function NextImageLightbox({ slide, rect }) {
       )
     : rect.height;
 
+  console.log(slide);
+
   return (
     <div
       className="ml-auto  max-w-full"
@@ -40,11 +42,10 @@ export default function NextImageLightbox({ slide, rect }) {
         fill
         className="max-w-full"
         alt=""
-        quality={100}
-        src={slide}
+        quality={95}
+        src={slide.src}
         loading="eager"
         draggable={false}
-        placeholder={slide.blurDataURL ? "blur" : undefined}
         style={{ objectFit: "contain" }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
       />

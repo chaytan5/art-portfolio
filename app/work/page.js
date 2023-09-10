@@ -60,23 +60,23 @@ export default function Work() {
       }
     })();
 
-    const goToTop = () => {
-      window.scrollTo({
-        top: 150,
-        behavior: "smooth",
-      });
-    };
+    // const goToTop = () => {
+    //   window.scrollTo({
+    //     top: 150,
+    //     behavior: "smooth",
+    //   });
+    // };
 
-    goToTop();
+    // goToTop();
   }, [currentTab]);
 
   return (
     <>
       <div className="w-full bg-neutral-100">
-        <main className="relative top-14 pb-32">
+        <main className="relative top-5 pb-32 md:top-14">
           <Tabs />
-          <section className="mx-auto w-11/12 max-w-screen-1.5xl">
-            <div className="py-20">
+          <section className="mx-auto w-11/12 max-w-screen-1.5xl border-x-2 border-x-black">
+            <div className=" py-10 md:py-20">
               <CurrentGallery currentTab={currentTab} />
             </div>
           </section>

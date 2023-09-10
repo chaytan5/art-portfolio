@@ -8,13 +8,13 @@ const CollectionCard = ({ title, description, image, tab }) => {
 
   return (
     <div className="grid place-items-center">
-      <div className="relative mx-8 mb-14 mt-8 flex min-h-[500px] max-w-[360px] cursor-grab flex-col border border-gold-40 bg-black text-center before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border before:border-gold-40 after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border after:border-gold-40 active:cursor-grabbing md:mx-auto xl:ml-10">
-        <div className="h-[200px] max-w-full">
+      <div className="relative mx-8 mb-14 mt-8 flex min-h-[420px] max-w-[360px] cursor-grab flex-col border border-gold-40 bg-black text-center before:absolute before:-inset-x-5 before:-inset-y-2.5 before:border before:border-gold-40 after:absolute after:-inset-x-2.5 after:-inset-y-5 after:border after:border-gold-40 active:cursor-grabbing md:mx-auto md:min-h-[500px] xl:ml-10">
+        <div className="h-[200px] w-full bg-gray-300">
           <Image
             width={350}
             height={200}
             src={`/images/collections/${image}`}
-            className="h-full max-w-full bg-black object-cover object-center"
+            className="h-full w-full max-w-full bg-black object-cover object-center"
             alt={title}
             quality={95}
             priority

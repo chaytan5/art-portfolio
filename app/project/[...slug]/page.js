@@ -1,3 +1,4 @@
+"use client";
 import projectsData from "@/constants/projectsData";
 import Image from "next/image";
 
@@ -8,13 +9,13 @@ const ProjectPage = ({ params }) => {
   );
   const { name, images } = currentProjectData[0];
   return (
-    <div className="flex items-start justify-between gap-5">
-      <div className="max-w-[75%]">
+    <div className="flex flex-col-reverse items-start justify-between gap-5 md:flex-row">
+      <div className="w-full md:max-w-[75%]">
         <div className="space-y-5">
           {images.map((image) => (
             <Image
-              className="max-w-full "
-              // onLoadingComplete={(image) => image.classList.remove("opacity-0")}
+              className="max-w-full bg-white opacity-0 transition-opacity duration-700"
+              onLoadingComplete={(image) => image.classList.remove("opacity-0")}
               key={image.id}
               src={image.src}
               width={image.width}
@@ -25,9 +26,9 @@ const ProjectPage = ({ params }) => {
           ))}
         </div>
       </div>
-      <div className="w-[25%] space-y-3">
-        <h2>{name}</h2>
-        <p>
+      <div className="w-full space-y-3 md:w-[25%]">
+        <h2 className="text-2xl font-bold ">{name}</h2>
+        <p className="hidden md:block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
           asperiores quae mollitia assumenda, saepe iure nostrum sunt doloribus
           eum cum autem aliquam exercitationem blanditiis voluptatem atque
