@@ -3,12 +3,11 @@ import Link from "next/link";
 import Divider from "@/components/Divider";
 import Carousel from "@/components/Carousel";
 import ContactForm from "@/components/ContactForm";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <div className="relative h-fit  min-h-[850px] w-full bg-black bg-headerBg2 bg-cover bg-center bg-no-repeat text-gold-90 lg:min-h-[1080px]">
+      <div className="bg-header relative  h-fit min-h-[850px] w-full bg-black bg-cover bg-center bg-no-repeat text-gold-90 lg:min-h-[1080px]">
         {/** Top Gradient*/}
         <div className="absolute top-0 z-0 min-h-[300px] w-full bg-gradient-to-b from-black/95 "></div>
 
@@ -52,7 +51,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <main className="relative w-full bg-black bg-headerBg bg-cover bg-center bg-no-repeat text-gold-90 ">
+      <main className="bg-body relative w-full bg-black bg-cover bg-center bg-no-repeat text-gold-90 ">
         <div className="absolute top-0 min-h-full w-full bg-gradient-to-b from-black/90 from-40% to-transparent"></div>
 
         {/** Main end gradient */}

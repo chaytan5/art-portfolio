@@ -23,9 +23,9 @@ module.exports = {
         "yellow-60": "#664927",
       },
       backgroundImage: {
-        headerBg: "url('~/assets/images/header.png')",
-        headerBg2: "url('~/assets/images/header2.png')",
-        hero: "url('~/assets/images/hero.png')",
+        header: "url('~/assets/images/header.webp')",
+        body: "url('~/assets/images/body.webp')",
+        hero: "url('~/assets/images/hero.webp')",
       },
       screens: {
         "1.5xl": "1440px",

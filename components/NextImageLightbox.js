@@ -40,11 +40,10 @@ export default function NextImageLightbox({ slide, rect }) {
         fill
         className="max-w-full"
         alt=""
-        quality={100}
-        src={slide}
-        loading="eager"
+        quality={95}
+        src={slide.src}
+        loading="lazy"
         draggable={false}
-        placeholder={slide.blurDataURL ? "blur" : undefined}
         style={{ objectFit: "contain" }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
       />
