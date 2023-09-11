@@ -22,7 +22,6 @@ import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
-import CustomContainer from "@/components/CustomContainer";
 
 function CurrentGallery({ currentTab }) {
   if (currentTab === "environment") return <EnvironmentsGallery />;
@@ -60,14 +59,16 @@ export default function Work() {
       }
     })();
 
-    // const goToTop = () => {
-    //   window.scrollTo({
-    //     top: 150,
-    //     behavior: "smooth",
-    //   });
-    // };
+    const goToTop = () => {
+      window.scrollTo({
+        top: 150,
+        behavior: "smooth",
+      });
+    };
 
-    // goToTop();
+    if (window.innerWidth > 768) {
+      goToTop();
+    }
   }, [currentTab]);
 
   return (
