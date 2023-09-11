@@ -6,7 +6,7 @@ const NextImage = ({ imgData: { height, width, src, title, key } }) => {
   const { setIsLightboxOpen, setCurrentIndex } = useLightboxContext();
   return (
     <div
-      className={`md:max-w-[${width}px] relative cursor-pointer rounded-sm transition duration-300 ease-in-out`}
+      className={`md:max-w-[${width}px] relative cursor-pointer rounded-sm bg-transparent transition duration-300 ease-in-out md:bg-neutral-200`}
       onClick={() => {
         setCurrentIndex(key - 1);
         setIsLightboxOpen(true);
