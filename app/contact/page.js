@@ -10,7 +10,7 @@ const Contact = () => {
             <h1 className="text-center font-marcellus text-4xl font-bold text-black">
               Services / Contact
             </h1>
-            <div className="mx-auto max-w-xl space-y-6 text-center text-lg font-semibold">
+            <div className="mx-auto max-w-xl space-y-6 text-center text-base font-semibold md:text-lg">
               <h3>
                 Game Environment/ Prop/Character Concepts, 2D Assets,
                 Worldbuilding, Card Art, Marketing Illustrations, Keyframes
@@ -28,8 +28,9 @@ const Contact = () => {
               </h3>
             </div>
           </div>
-
-          <ContactForm variant="light" />
+          <section className="px-5 pb-10">
+            <ContactForm variant="light" />
+          </section>
         </div>
       </div>
     </div>
