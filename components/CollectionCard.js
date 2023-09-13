@@ -14,7 +14,7 @@ const CollectionCard = ({ title, description, image, tab }) => {
             width={350}
             height={200}
             src={`/images/collections/${image}`}
-            className="h-full w-full max-w-full bg-black object-cover object-center"
+            className="h-full w-full bg-black object-cover object-center"
             alt={title}
             quality={95}
             priority

@@ -1,17 +1,11 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 export const TabsContext = createContext(null);
 
 const TabsContextProvider = ({ children }) => {
-  const [currentTab, setCurrentTab] = useState();
-
-  useEffect(() => {
-    if (!currentTab) {
-      setCurrentTab("environment");
-    }
-  }, [currentTab]);
+  const [currentTab, setCurrentTab] = useState(() => "environment");
 
   return (
     <TabsContext.Provider
