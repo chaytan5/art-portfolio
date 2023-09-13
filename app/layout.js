@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${meddon.variable} ${marcellus.variable} ${marc.variable} scroll-smooth`}
     >
-      <body className="font-marcellus">
+      <body className="overscroll-none font-marcellus">
         <Nav />
         <LightboxContextProvider>
           <TabsContextProvider>{children}</TabsContextProvider>

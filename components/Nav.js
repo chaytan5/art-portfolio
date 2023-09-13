@@ -66,14 +66,11 @@ const Nav = () => {
           </Link>
           <div className="hidden md:block">
             <ul className="flex items-center gap-12">
-              <Link href={"/"}>
-                <li className="cursor-pointer">Home</li>
-              </Link>
-              <Link href={"/work"}>
-                <li className="cursor-pointer">Work</li>
-              </Link>
-              <li className="cursor-pointer">About</li>
-              <li className="cursor-pointer">Contact</li>
+              {navLinks.map((item, idx) => (
+                <Link key={idx} href={item.href}>
+                  <li className="cursor-pointer">{item.title}</li>
+                </Link>
+              ))}
             </ul>
           </div>
           <div className="block cursor-pointer md:hidden" onClick={toggleMenu}>

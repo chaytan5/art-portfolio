@@ -57,11 +57,7 @@ const Carousel = () => {
       >
         <Image src={arrowIcon} alt="Next button" />
       </div>
-      <Slider
-        className="mx-auto md:mx-10"
-        ref={sliderRef}
-        {...carouselSettings}
-      >
+      <Slider className="mx-auto md:mx-8" ref={sliderRef} {...carouselSettings}>
         {collections.map((data) => (
           <CollectionCard key={data.id} {...data} />
         ))}

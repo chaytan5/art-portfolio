@@ -1,4 +1,3 @@
-"use client";
 import projectsData from "@/constants/projectsData";
 import Image from "next/image";
 
@@ -14,13 +13,12 @@ const ProjectPage = ({ params }) => {
         <div className="space-y-5">
           {images.map((image) => (
             <Image
-              className="max-w-full bg-white opacity-0 transition-opacity duration-700"
-              onLoadingComplete={(image) => image.classList.remove("opacity-0")}
+              className="max-w-full bg-neutral-200"
               key={image.id}
               src={image.src}
               width={image.width}
               height={image.height}
-              alt=""
+              alt={image.name}
               quality={95}
             />
           ))}
