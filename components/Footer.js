@@ -18,27 +18,47 @@ const Footer = () => {
             <Link href={"/work"}>
               <li className="cursor-pointer">Work</li>
             </Link>
-            <li className="cursor-pointer">About</li>
-            <li className="cursor-pointer">Contact</li>
+            <Link href={"/about"}>
+              <li className="cursor-pointer">About</li>
+            </Link>
+            <Link href={"/contact"}>
+              <li className="cursor-pointer">Contact</li>
+            </Link>
           </ul>
         </div>
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="flex items-center gap-6 text-xl md:gap-5">
-            <Link href={"/"}>
+            <Link
+              target="_blank"
+              rel="noreferrer noopener"
+              href={"https://www.artstation.com/neha_rastogi"}
+            >
               <FaArtstation />
             </Link>
-            <Link href={"/"}>
+            <Link
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.linkedin.com/in/neharastogi244/"
+            >
               <FaLinkedin />
             </Link>
-            <Link href={"/"}>
+            <Link
+              target="_blank"
+              rel="noreferrer noopener"
+              href={"http://discordapp.com/users/Neha#9446"}
+            >
               <FaDiscord />
             </Link>
-            <Link href={"/"}>
+            <Link
+              target="_blank"
+              rel="noreferrer noopener"
+              href={"https://www.instagram.com/thenehaink/"}
+            >
               <FaInstagram />
             </Link>
           </div>
           <div>
-            <a href="mailto:">mail@neharastogi.com</a>
+            <a href="mailto:">contact@neharastogi.com</a>
           </div>
         </div>
       </div>
