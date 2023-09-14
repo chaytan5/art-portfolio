@@ -10,7 +10,7 @@ const Contact = () => {
             <h1 className="text-center text-3xl font-bold uppercase tracking-widest text-black md:text-4xl">
               Services / Contact
             </h1>
-            <div className="mx-auto max-w-xl space-y-6 text-center text-base font-semibold md:text-lg">
+            <div className="mx-auto max-w-xl space-y-6 text-center text-base md:text-lg">
               <h3>
                 Game Environment/ Prop/Character Concepts, 2D Assets,
                 Worldbuilding, Card Art, Marketing Illustrations, Keyframes
@@ -21,7 +21,7 @@ const Contact = () => {
               </h3>
               <h3 className="pt-6">
                 To inquire about availability and rates, please email{" "}
-                <a href="mailto:contact@neharastogi.com">
+                <a href="mailto:contact@neharastogi.com" className="underline">
                   contact@neharastogi.com
                 </a>{" "}
                 or fill out the form below!
