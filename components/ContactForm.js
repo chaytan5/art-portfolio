@@ -1,13 +1,26 @@
 "use client";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 const ContactForm = ({ variant }) => {
   const {
     register,
     handleSubmit,
+    formState,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data);
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset({
+        Name: "",
+        Email: "",
+        Message: "",
+      });
+    }
+  }, [reset, formState]);
 
   return (
     <div
@@ -32,8 +45,8 @@ const ContactForm = ({ variant }) => {
         >
           Use the form below to drop me an email, or you can contact me directly
           at{" "}
-          <a href="mailto:example@example.com" className="underline">
-            mail@neharastogi.com
+          <a href="mailto:contact@neharastogi.com" className="underline">
+            contact@neharastogi.com
           </a>
         </p>
         <form
