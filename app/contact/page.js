@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="mx-auto w-11/12 max-w-screen-1.5xl">
         <div className="space-y-32 pb-32 pt-20">
           <div className="space-y-10">
-            <h1 className="text-center font-marcellus text-4xl font-bold text-black">
+            <h1 className="text-center text-3xl font-bold uppercase tracking-widest text-black md:text-4xl">
               Services / Contact
             </h1>
             <div className="mx-auto max-w-xl space-y-6 text-center text-base font-semibold md:text-lg">
