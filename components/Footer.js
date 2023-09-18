@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa6";
+import Divider from "./Divider";
 
 const Footer = () => {
   return (

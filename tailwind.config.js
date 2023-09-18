@@ -26,6 +26,10 @@ module.exports = {
         header: "url('~/assets/images/header.webp')",
         body: "url('~/assets/images/body.webp')",
         hero: "url('~/assets/images/hero.webp')",
+        contact: "url('~/assets/images/contact.webp')",
+        contact2: "url('~/assets/images/contact2.webp')",
+        contact3: "url('~/assets/images/contact3.webp')",
+        contact4: "url('~/assets/images/contact4.webp')",
       },
       screens: {
         "1.5xl": "1440px",

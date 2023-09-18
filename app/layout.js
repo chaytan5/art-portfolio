@@ -25,8 +25,9 @@ const marc = Marck_Script({
 });
 
 export const metadata = {
-  title: "Neha Rastogi | Creative Designer",
-  description: "",
+  title: "Neha Rastogi | Concept Designer",
+  description:
+    "Neha creates art for Games, Film & Animation with an emphasis on Environments & Worldbuilding. The professional projects she's worked on include Game UI, VFX Illustration, Keyframes, Card Art, Marketing Art & Concept art.",
 };
 
 export default function RootLayout({ children }) {

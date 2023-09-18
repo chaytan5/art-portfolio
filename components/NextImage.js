@@ -22,10 +22,8 @@ const NextImage = ({ imgData: { height, width, src, title, key } }) => {
         quality={95}
         loading="lazy"
       />
-      <div className="absolute inset-0 grid h-full w-full place-items-center overflow-hidden bg-black bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-70">
-        <div className="rounded-full border-2 border-gold-90 p-4">
-          <Image src={eyeIcon} alt="View full image" />
-        </div>
+      <div className="absolute inset-0 grid h-full w-full place-items-center overflow-hidden bg-transparent bg-fixed text-transparent  transition duration-300 ease-in-out hover:bg-black/70 hover:text-gold-90">
+        <p className="p-4 text-center uppercase ">{title}</p>
       </div>
     </div>
   );
