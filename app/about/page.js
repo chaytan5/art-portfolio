@@ -1,6 +1,7 @@
 import Divider from "@/components/Divider";
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { GoDotFill } from "react-icons/go";
 
 const About = () => {
   return (
@@ -12,8 +13,8 @@ const About = () => {
               About
             </h1>
 
-            <div className="flex flex-col gap-8 pt-20 md:flex-row">
-              <div className="w-1/2 space-y-8 text-base md:text-xl">
+            <div className="flex flex-col-reverse gap-8 pt-20 md:flex-row">
+              <div className="w-full space-y-8 text-base md:w-1/2 md:text-xl">
                 <h2>
                   Neha Rastogi is a concept artist and illustrator who’s recent
                   focus has been in the core gaming sector where she has delved
@@ -46,22 +47,58 @@ const About = () => {
                   aspiring artists, on LinkedIn, with plans to expand her reach
                   further.
                 </h2>
-                <div>
-                  <h4>Other socials:</h4>
+                <div className="pt-16 text-neutral-300">
+                  <h4 className="text-2xl">Other socials - </h4>
 
-                  <div>
-                    <p>Instagram</p>
-                    <Link
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      href={"https://www.artstation.com/neha_rastogi"}
-                    ></Link>
+                  <div className="space-y-10 pt-16">
+                    <div>
+                      <p>Instagram:</p>
+                      <Link
+                        className="flex items-center gap-1 underline"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={"https://www.instagram.com/thenehaink/"}
+                      >
+                        <span>Neha Rastogi (@thenehaink)</span>
+                        <GoDotFill /> <span>Instagram photos and videos</span>
+                      </Link>
+                    </div>
+                    <div>
+                      <p>Artstation:</p>
+                      <Link
+                        className="underline"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href={"https://www.artstation.com/neha_rastogi"}
+                      >
+                        <span>Artstation - Neha Rastogi</span>
+                      </Link>
+                    </div>
+                    <div className="pt-10">
+                      <p>Email:</p>
+                      <Link
+                        className=" underline"
+                        href="mailto:art@neharastogi.com"
+                      >
+                        <span>art@neharastogi.com</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="grid h-[400px] w-1/2 place-items-center bg-neutral-400">
-                Profile image
+              <div className="relative z-20 aspect-square h-[250px] w-full  bg-neutral-700 md:h-[400px] md:w-1/2">
+                <Image
+                  alt="Neha Rastogi"
+                  className="mx-auto max-w-full bg-cover object-cover"
+                  // width={700}
+                  // height={550}
+                  fill
+                  quality={95}
+                  src={
+                    "https://res.cloudinary.com/dywu7jrjp/image/upload/v1673533517/neha%20portfolio/about.jpg"
+                  }
+                />
               </div>
             </div>
           </div>
