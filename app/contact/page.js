@@ -25,11 +25,8 @@ const Contact = () => {
                 </h3>
                 <h3 className="pt-6">
                   To inquire about availability and rates, please email{" "}
-                  <a
-                    href="mailto:contact@neharastogi.com"
-                    className="underline"
-                  >
-                    contact@neharastogi.com
+                  <a href="mailto:art@neharastogi.com" className="underline">
+                    art@neharastogi.com
                   </a>{" "}
                   or fill out the form below!
                 </h3>

@@ -5,7 +5,6 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa6";
-import Divider from "./Divider";
 
 const Footer = () => {
   return (
@@ -59,7 +58,7 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <a href="mailto:">contact@neharastogi.com</a>
+            <a href="mailto:art@neharastogi.com">art@neharastogi.com</a>
           </div>
         </div>
       </div>

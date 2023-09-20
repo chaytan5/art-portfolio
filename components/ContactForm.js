@@ -45,8 +45,8 @@ const ContactForm = ({ variant }) => {
         >
           Use the form below to drop me an email, or you can contact me directly
           at{" "}
-          <a href="mailto:contact@neharastogi.com" className="underline">
-            contact@neharastogi.com
+          <a href="mailto:art@neharastogi.com" className="underline">
+            art@neharastogi.com
           </a>
         </p>
         <form
