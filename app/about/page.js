@@ -47,50 +47,12 @@ const About = () => {
                   aspiring artists, on LinkedIn, with plans to expand her reach
                   further.
                 </h2>
-                <div className="pt-16 text-neutral-300">
-                  <h4 className="text-2xl">Other socials - </h4>
-
-                  <div className="space-y-10 pt-16">
-                    <div>
-                      <p>Instagram:</p>
-                      <Link
-                        className="flex items-center gap-1 underline"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href={"https://www.instagram.com/thenehaink/"}
-                      >
-                        <span>Neha Rastogi (@thenehaink)</span>
-                        <GoDotFill /> <span>Instagram photos and videos</span>
-                      </Link>
-                    </div>
-                    <div>
-                      <p>Artstation:</p>
-                      <Link
-                        className="underline"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href={"https://www.artstation.com/neha_rastogi"}
-                      >
-                        <span>Artstation - Neha Rastogi</span>
-                      </Link>
-                    </div>
-                    <div className="pt-10">
-                      <p>Email:</p>
-                      <Link
-                        className=" underline"
-                        href="mailto:art@neharastogi.com"
-                      >
-                        <span>art@neharastogi.com</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
               </div>
 
-              <div className="relative z-20 aspect-square h-[250px] w-full  bg-neutral-700 md:h-[400px] md:w-1/2">
+              <div className="relative h-[250px] w-full  bg-neutral-700 md:h-[400px] md:w-1/2">
                 <Image
                   alt="Neha Rastogi"
-                  className="mx-auto max-w-full bg-cover object-cover"
+                  className="mx-auto max-w-full object-cover object-center"
                   // width={700}
                   // height={550}
                   fill
@@ -99,6 +61,41 @@ const About = () => {
                     "https://res.cloudinary.com/dywu7jrjp/image/upload/v1673533517/neha%20portfolio/about.jpg"
                   }
                 />
+              </div>
+            </div>
+            <div className="pt-16 text-neutral-300">
+              <h4 className="text-2xl">Other socials - </h4>
+            </div>
+            <div className="space-y-10 pt-16 text-base text-neutral-300 md:text-xl">
+              <div>
+                <p>Instagram:</p>
+                <Link
+                  className="flex flex-wrap items-center gap-1 underline"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href={"https://www.instagram.com/thenehaink/"}
+                >
+                  <span>Neha Rastogi (@thenehaink)</span>
+                  <GoDotFill className="hidden md:block" />{" "}
+                  <span>Instagram photos and videos</span>
+                </Link>
+              </div>
+              <div>
+                <p>Artstation:</p>
+                <Link
+                  className="underline"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href={"https://www.artstation.com/neha_rastogi"}
+                >
+                  <span>Artstation - Neha Rastogi</span>
+                </Link>
+              </div>
+              <div className="pt-10">
+                <p>Email:</p>
+                <Link className=" underline" href="mailto:art@neharastogi.com">
+                  <span>art@neharastogi.com</span>
+                </Link>
               </div>
             </div>
           </div>
