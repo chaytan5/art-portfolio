@@ -46,27 +46,20 @@ const About = () => {
                   aspiring artists, on LinkedIn, with plans to expand her reach
                   further.
                 </h2>
-                I create art for Games, Film & Animation with an emphasis on
-                Environments & Worldbuilding. The professional projects
-                I&apos;ve worked on have included responsibilities in Game UI,
-                VFX Illustration, Keyframes, Card Art, Marketing Art & Concept
-                art.
-              </div>
-              <div>
-                <h4>Other socials:</h4>
-
                 <div>
-                  <p>Instagram</p>
-                  <Link
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href={"https://www.artstation.com/neha_rastogi"}
-                  ></Link>
+                  <h4>Other socials:</h4>
+
+                  <div>
+                    <p>Instagram</p>
+                    <Link
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href={"https://www.artstation.com/neha_rastogi"}
+                    ></Link>
+                  </div>
                 </div>
-                <Link href={"/work"}>
-                  <li className="cursor-pointer">Work</li>
-                </Link>
               </div>
+
               <div className="grid h-[400px] w-1/2 place-items-center bg-neutral-400">
                 Profile image
               </div>
