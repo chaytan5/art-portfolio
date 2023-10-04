@@ -19,6 +19,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Counter from "yet-another-react-lightbox/plugins/counter";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/plugins/counter.css";
@@ -97,7 +98,7 @@ export default function Work() {
           //   <CustomContainer slide={slide}>{children}</CustomContainer>
           // ),
         }}
-        plugins={[Thumbnails, Fullscreen, Counter]}
+        plugins={[Thumbnails, Fullscreen, Counter, Zoom]}
         carousel={{
           finite: true,
           preload: 5,

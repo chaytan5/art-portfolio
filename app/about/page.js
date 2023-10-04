@@ -1,7 +1,9 @@
 import Divider from "@/components/Divider";
 import Image from "next/image";
 import Link from "next/link";
-import { GoDotFill } from "react-icons/go";
+import { HiOutlineMail } from "react-icons/hi";
+import aboutImg from "@/assets/images/about.webp";
+import { FaArtstation, FaInstagram } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -13,8 +15,8 @@ const About = () => {
               About
             </h1>
 
-            <div className="flex flex-col-reverse gap-8 pt-20 md:flex-row">
-              <div className="w-full space-y-8 text-base md:w-1/2 md:text-xl">
+            <div className="flex flex-col gap-8 pt-10 md:flex-row md:pt-20">
+              <div className="w-full space-y-8 text-center text-base md:w-2/3 md:text-left md:text-xl">
                 <h2>
                   Neha Rastogi is a concept artist and illustrator who’s recent
                   focus has been in the core gaming sector where she has delved
@@ -44,60 +46,81 @@ const About = () => {
                 </h2>
                 <h2>
                   She actively shares her experiences and learning journey for
-                  aspiring artists, on LinkedIn, with plans to expand her reach
-                  further.
+                  aspiring artists, on{" "}
+                  <Link
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="underline"
+                    href="https://www.linkedin.com/in/neharastogi244/"
+                  >
+                    LinkedIn
+                  </Link>
+                  , with plans to expand her reach further.
                 </h2>
               </div>
 
-              <div className="relative h-[250px] w-full  bg-neutral-700 md:h-[400px] md:w-1/2">
+              <div className="relative mx-auto h-fit w-full max-w-[500px] overflow-hidden rounded-md bg-neutral-700 md:w-1/3">
                 <Image
                   alt="Neha Rastogi"
                   className="mx-auto max-w-full object-cover object-center"
                   // width={700}
                   // height={550}
-                  fill
                   quality={95}
-                  src={
-                    "https://res.cloudinary.com/dywu7jrjp/image/upload/v1673533517/neha%20portfolio/about.jpg"
-                  }
+                  src={aboutImg}
+                  // src={
+                  //   "https://res.cloudinary.com/dywu7jrjp/image/upload/v1673533517/neha%20portfolio/about.jpg"
+                  // }
                 />
               </div>
             </div>
-            <div className="pt-16 text-neutral-300">
-              <h4 className="text-2xl">Other socials - </h4>
+            {/* <div className="pt-16 text-neutral-300"> */}
+            {/* <h4 className="text-2xl">Other socials - </h4> */}
+            {/* </div>  */}
+            <div className="space-y-10 pt-28 text-base text-neutral-300 md:text-xl">
+              <div className="flex flex-wrap items-center gap-8">
+                <FaInstagram className="text-4xl" />
+                <div className="space-y-10">
+                  <p>Instagram:</p>
+                  <Link
+                    className="underline"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href={"https://www.instagram.com/thenehaink/"}
+                  >
+                    {/* <span>Neha Rastogi (@thenehaink)</span> */}
+                    {/* <GoDotFill className="hidden md:block" />{" "} */}
+                    https://www.instagram.com/thenehaink
+                  </Link>
+                </div>
+              </div>
+              {/* <div> */}
+              <div className="flex flex-col flex-wrap items-start gap-4 md:flex-row md:items-center md:gap-8">
+                <FaArtstation className="text-4xl" />
+                <div className="">
+                  <p>ArtStation:</p>
+                  <Link
+                    className="underline"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href={"https://www.artstation.com/neha_rastogi"}
+                  >
+                    <span>https://www.artstation.com/neha_rastogi</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* <div className="pt-10"> */}
+              <div className="flex flex-wrap items-center gap-8">
+                <HiOutlineMail className="text-4xl" />
+                <div>
+                  <p>Email:</p>
+                  <Link className="underline" href="mailto:art@neharastogi.com">
+                    <span>art@neharastogi.com</span>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="space-y-10 pt-16 text-base text-neutral-300 md:text-xl">
-              <div>
-                <p>Instagram:</p>
-                <Link
-                  className="flex flex-wrap items-center gap-1 underline"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href={"https://www.instagram.com/thenehaink/"}
-                >
-                  <span>Neha Rastogi (@thenehaink)</span>
-                  <GoDotFill className="hidden md:block" />{" "}
-                  <span>Instagram photos and videos</span>
-                </Link>
-              </div>
-              <div>
-                <p>Artstation:</p>
-                <Link
-                  className="underline"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href={"https://www.artstation.com/neha_rastogi"}
-                >
-                  <span>Artstation - Neha Rastogi</span>
-                </Link>
-              </div>
-              <div className="pt-10">
-                <p>Email:</p>
-                <Link className=" underline" href="mailto:art@neharastogi.com">
-                  <span>art@neharastogi.com</span>
-                </Link>
-              </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>

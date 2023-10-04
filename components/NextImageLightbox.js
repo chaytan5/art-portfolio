@@ -32,10 +32,10 @@ export default function NextImageLightbox({ slide, rect }) {
     : rect.height;
 
   return (
-    <div className="ml-auto  max-w-full">
+    <div className="ml-auto max-w-full">
       <Image
         className=""
-        alt=""
+        alt={slide.title}
         quality={95}
         src={slide.src}
         width={width}
