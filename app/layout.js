@@ -6,6 +6,7 @@ import LightboxContextProvider from "@/contexts/lightbox-context";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import TabsContextProvider from "@/contexts/tab-context";
+import { Toaster } from "sonner";
 
 const meddon = Meddon({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
           <TabsContextProvider>{children}</TabsContextProvider>
         </LightboxContextProvider>
         <Footer />
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );
