@@ -40,10 +40,9 @@ export default function NextImageLightbox({ slide, rect }) {
         src={slide.src}
         width={width}
         height={height}
-        priority
         draggable={false}
         style={{ objectFit: "contain" }}
-        sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
+        sizes={`${Math.ceil((width / window.innerWidth) * 90)}vw`}
       />
     </div>
   );

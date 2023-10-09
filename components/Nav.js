@@ -128,10 +128,10 @@ const Nav = () => {
                       className="text-center"
                     >
                       <a
-                        href="mailto:mail@neharastogi.com"
+                        href="mailto:art@neharastogi.com"
                         className="underline"
                       >
-                        mail@neharastogi.com
+                        art@neharastogi.com
                       </a>
                     </motion.div>
                   </div>
