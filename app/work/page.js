@@ -98,7 +98,7 @@ export default function Work() {
           //   <CustomContainer slide={slide}>{children}</CustomContainer>
           // ),
         }}
-        plugins={[Thumbnails, Fullscreen, Counter, Zoom]}
+        plugins={[Thumbnails, Fullscreen, Counter]}
         carousel={{
           finite: true,
           preload: 5,

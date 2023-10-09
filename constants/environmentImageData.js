@@ -7,6 +7,7 @@ const environmentPhotos = [
     width: 975,
     height: 568,
     title: "GUERILLA HIDEOUT - INTERIOR ENVIRONMENT",
+    project: "/project/guerilla-hideout",
   },
   {
     key: 2,
@@ -14,6 +15,7 @@ const environmentPhotos = [
     width: 452,
     height: 271,
     title: "SPOREX- WORLDBUILDING THUMBNAILS",
+    project: "/project/galactic-gardens",
   },
   {
     key: 3,
@@ -35,6 +37,7 @@ const environmentPhotos = [
     width: 311,
     height: 244,
     title: "EARLY FRENCH HELICOPTER",
+    project: "/project/tailwind",
   },
   {
     key: 6,
@@ -42,6 +45,7 @@ const environmentPhotos = [
     width: 325,
     height: 244,
     title: "TAILWIND - FRENCH VEHICLE WORKSHOP",
+    project: "/project/tailwind",
   },
   {
     key: 7,
@@ -49,6 +53,7 @@ const environmentPhotos = [
     width: 430,
     height: 244,
     title: "TAILWIND - FRENCH INVENTOR _ AVIATION RACER",
+    project: "/project/tailwind",
   },
   {
     key: 8,
@@ -56,6 +61,7 @@ const environmentPhotos = [
     width: 347,
     height: 280,
     title: "TAILWIND - UMBRELLA HELICOPTER",
+    project: "/project/tailwind",
   },
   {
     key: 9,
@@ -63,6 +69,7 @@ const environmentPhotos = [
     width: 415,
     height: 280,
     title: "WORLD WAR Z -SOLDIER AND ARMOURED CAR",
+    project: "/project/worldwar-z",
   },
   {
     key: 10,
@@ -70,6 +77,7 @@ const environmentPhotos = [
     width: 417,
     height: 280,
     title: "TAILWIND - THUMBNAILS",
+    project: "/project/tailwind",
   },
   {
     key: 11,
@@ -91,6 +99,7 @@ const environmentPhotos = [
     width: 455,
     height: 250,
     title: "SPOREX- TERRAIN EXPLORATION",
+    project: "/project/galactic-gardens",
   },
   {
     key: 14,
@@ -98,6 +107,7 @@ const environmentPhotos = [
     width: 455,
     height: 260,
     title: "SPOREX PLANT - COLOR OPTIONS",
+    project: "/project/galactic-gardens",
   },
   {
     key: 15,
@@ -105,6 +115,7 @@ const environmentPhotos = [
     width: 990,
     height: 540,
     title: "SPOREX- PLANT OBSTACLE ENVIRONMENT",
+    project: "/project/galactic-gardens",
   },
   {
     key: 16,
@@ -112,6 +123,7 @@ const environmentPhotos = [
     width: 590,
     height: 280,
     title: "ALIEN EGG RESEARCH TOWER",
+    project: "/project/galactic-gardens",
   },
   {
     key: 17,
@@ -126,6 +138,7 @@ const environmentPhotos = [
     width: 383,
     height: 280,
     title: "SPOREX- GAMEPLAY MAP",
+    project: "/project/sporex",
   },
   {
     key: 19,
@@ -133,6 +146,7 @@ const environmentPhotos = [
     width: 341,
     height: 257,
     title: "TAILWIND -  CRAFTING WAREHOUSE",
+    project: "/project/tailwind",
   },
   {
     key: 20,
@@ -140,6 +154,7 @@ const environmentPhotos = [
     width: 352,
     height: 257,
     title: "WORLD WAR Z -SOLDIER THUMBNAILS",
+    project: "/project/worldwar-z",
   },
   {
     key: 21,
@@ -147,6 +162,7 @@ const environmentPhotos = [
     width: 353,
     height: 257,
     title: "TAILWIND - AMERICAN INDUSTRIAL FACILITY",
+    project: "/project/tailwind",
   },
   {
     key: 22,
@@ -154,6 +170,7 @@ const environmentPhotos = [
     width: 371,
     height: 257,
     title: "TAILWIND - WORKSHOP CUTAWAY",
+    project: "/project/tailwind",
   },
   {
     key: 23,
@@ -161,6 +178,7 @@ const environmentPhotos = [
     width: 462,
     height: 265,
     title: "SPOREX- CRASH WASTE",
+    project: "/project/galactic-gardens",
   },
   {
     key: 24,
@@ -189,6 +207,7 @@ const environmentPhotos = [
     width: 487,
     height: 240,
     title: "RESURRECTION - RESORATION SITE",
+    project: "/project/resurrection",
   },
   {
     key: 28,
@@ -196,6 +215,7 @@ const environmentPhotos = [
     width: 432,
     height: 240,
     title: "RESURRECTION - SHRINE LAYOUT THUMBNAIL",
+    project: "/project/resurrection",
   },
   {
     key: 29,
@@ -203,6 +223,7 @@ const environmentPhotos = [
     width: 505,
     height: 240,
     title: "RESURRECTION - THUMNAILS ",
+    project: "/project/resurrection",
   },
   {
     key: 30,
@@ -210,6 +231,7 @@ const environmentPhotos = [
     width: 1440,
     height: 490,
     title: "SPOREX - BABY SHIP",
+    project: "/project/mini-ship",
   },
   {
     key: 31,
@@ -241,11 +263,33 @@ const environmentPhotos = [
   },
 ];
 
+// const imageSizes = [16, 32, 48, 64, 96, 128, 256, 384];
+// const deviceSizes = [640, 750, 828, 1080, 1200, 1920, 2048, 3840];
+
+// function nextImageUrl(src, size) {
+//   return `/_next/image?url=${encodeURIComponent(src)}&w=${size}&q=75`;
+// }
+
 const photos = environmentPhotos.map((img) => {
   return {
     ...img,
     src: url + img.src,
   };
 });
+
+// const photosWithNextLink = photos.map((img) => {
+//   return {
+//     ...img,
+//     src: nextImageUrl(img.src, img.width),
+//     srcSet: imageSizes
+//       .concat(...deviceSizes)
+//       .filter((size) => size <= img.width)
+//       .map((size) => ({
+//         src: nextImageUrl(img.src, img.width),
+//         width: size,
+//         height: Math.round((img.height / img.width) * size),
+//       })),
+//   };
+// });
 
 export default photos;
