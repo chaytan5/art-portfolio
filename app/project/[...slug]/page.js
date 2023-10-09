@@ -47,14 +47,14 @@ const ProjectPage = ({ params }) => {
         </div>
         <div className="w-full space-y-3 md:w-[25%]">
           <h2 className="text-2xl font-bold ">{name}</h2>
-          <p className="hidden md:block">
+          {/* <p className="hidden md:block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
             asperiores quae mollitia assumenda, saepe iure nostrum sunt
             doloribus eum cum autem aliquam exercitationem blanditiis voluptatem
             atque deleniti? Explicabo facere vero maxime repudiandae, fuga quam
             deleniti. Totam sequi quos harum eum officia iste repellat
             excepturi, qui unde illum ipsa. Dolorum, corrupti?
-          </p>
+          </p> */}
         </div>
       </div>
     </>
