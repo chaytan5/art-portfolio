@@ -63,8 +63,6 @@ const About = () => {
                 <Image
                   alt="Neha Rastogi"
                   className="mx-auto max-w-full object-cover object-center"
-                  // width={700}
-                  // height={550}
                   quality={95}
                   src={aboutImg}
                   // src={
@@ -73,13 +71,10 @@ const About = () => {
                 />
               </div>
             </div>
-            {/* <div className="pt-16 text-neutral-300"> */}
-            {/* <h4 className="text-2xl">Other socials - </h4> */}
-            {/* </div>  */}
             <div className="space-y-10 pt-28 text-base text-neutral-300 md:text-xl">
-              <div className="flex flex-wrap items-center gap-8">
-                <FaInstagram className="text-4xl" />
-                <div className="space-y-10">
+              <div className="flex items-center gap-4 md:flex-row md:gap-8">
+                <FaInstagram className="text-xl md:block md:text-4xl" />
+                <div className="text-sm md:text-xl">
                   <p>Instagram:</p>
                   <Link
                     className="underline"
@@ -87,16 +82,13 @@ const About = () => {
                     rel="noreferrer noopener"
                     href={"https://www.instagram.com/thenehaink/"}
                   >
-                    {/* <span>Neha Rastogi (@thenehaink)</span> */}
-                    {/* <GoDotFill className="hidden md:block" />{" "} */}
                     https://www.instagram.com/thenehaink
                   </Link>
                 </div>
               </div>
-              {/* <div> */}
-              <div className="flex flex-col flex-wrap items-start gap-4 md:flex-row md:items-center md:gap-8">
-                <FaArtstation className="text-4xl" />
-                <div className="">
+              <div className="flex items-center gap-4 md:flex-row md:gap-8">
+                <FaArtstation className="text-xl md:block md:text-4xl" />
+                <div className="text-sm md:text-xl">
                   <p>ArtStation:</p>
                   <Link
                     className="underline"
@@ -108,11 +100,9 @@ const About = () => {
                   </Link>
                 </div>
               </div>
-
-              {/* <div className="pt-10"> */}
-              <div className="flex flex-wrap items-center gap-8">
-                <HiOutlineMail className="text-4xl" />
-                <div>
+              <div className="flex items-center gap-4 md:flex-row md:gap-8">
+                <HiOutlineMail className="text-xl md:block md:text-4xl" />
+                <div className="text-sm md:text-xl">
                   <p>Email:</p>
                   <Link className="underline" href="mailto:art@neharastogi.com">
                     <span>art@neharastogi.com</span>
@@ -120,7 +110,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-            {/* </div> */}
           </div>
         </div>
       </div>
