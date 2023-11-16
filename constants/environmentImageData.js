@@ -95,18 +95,18 @@ const environmentPhotos = [
   },
   {
     key: 13,
-    src: "img13.webp",
-    width: 510,
+    src: "img15.webp",
+    width: 515,
     height: 260,
-    title: "SPOREX- TERRAIN EXPLORATION",
+    title: "SPOREX- PLANT OBSTACLE ENVIRONMENT",
     project: "/project/galactic-gardens",
   },
   {
     key: 14,
     src: "img14-new.webp",
-    width: 510,
+    width: 515,
     height: 260,
-    title: "CAVERN BEASTS",
+    title: "CAVERN BEASTS SPLASH ART",
     // project: "/project/galactic-gardens",
   },
   {
@@ -114,7 +114,7 @@ const environmentPhotos = [
     src: "img15-new.webp",
     width: 975,
     height: 540,
-    title: "WINTER GUARDIAN",
+    title: "WINTER GUARDIAN SPLASH ART",
     // project: "/project/galactic-gardens",
   },
   {
