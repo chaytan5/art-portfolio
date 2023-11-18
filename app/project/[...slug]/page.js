@@ -29,14 +29,15 @@ const ProjectPage = ({ params }) => {
 
         <button className="text-lg underline ">Back to Projects</button>
       </Link>
-      <div className="flex flex-col-reverse items-start justify-between gap-5 pb-32 pt-8 md:flex-row">
-        <div className="w-full md:max-w-[75%]">
-          <div className="space-y-5">
+      <div className="flex flex-col-reverse items-start justify-between  pb-32 pt-8 md:flex-row md:gap-5">
+        <div className="w-full md:w-[75%]">
+          <div className="space-y-5 pt-5 md:pt-0">
             {images.map((image) => (
               <Image
-                className="max-w-full  bg-neutral-200"
+                className="max-w-full  bg-neutral-300"
                 key={image.id}
                 src={image.src}
+                sizes="100vw"
                 width={image.width}
                 height={image.height}
                 alt={image.name}
@@ -48,14 +49,6 @@ const ProjectPage = ({ params }) => {
         <div className="w-full space-y-3 md:w-[25%]">
           <h2 className="text-2xl font-bold ">{name}</h2>
           <p className="whitespace-pre-line text-neutral-900">{description}</p>
-          {/* <p className="hidden md:block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-            asperiores quae mollitia assumenda, saepe iure nostrum sunt
-            doloribus eum cum autem aliquam exercitationem blanditiis voluptatem
-            atque deleniti? Explicabo facere vero maxime repudiandae, fuga quam
-            deleniti. Totam sequi quos harum eum officia iste repellat
-            excepturi, qui unde illum ipsa. Dolorum, corrupti?
-          </p> */}
         </div>
       </div>
     </>

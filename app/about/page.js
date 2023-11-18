@@ -4,6 +4,12 @@ import Link from "next/link";
 import { HiOutlineMail } from "react-icons/hi";
 import aboutImg from "@/assets/images/about.webp";
 import { FaArtstation, FaInstagram } from "react-icons/fa6";
+import atmatva from "@/assets/images/clients/atmatva.png";
+import digitalDomain from "@/assets/images/clients/digital-domain.png";
+import myth from "@/assets/images/clients/mythnew.png";
+import ogilvyMather from "@/assets/images/clients/ogilvy-mather.png";
+import volta from "@/assets/images/clients/volta.png";
+import zynga from "@/assets/images/clients/zynga.png";
 
 const About = () => {
   return (
@@ -17,34 +23,34 @@ const About = () => {
 
             <div className="flex flex-col gap-8 pt-10 md:flex-row md:pt-20">
               <div className="w-full space-y-8 text-center text-base md:w-2/3 md:text-left md:text-xl">
-                <h2>
+                <h3>
                   Neha Rastogi is a concept artist and illustrator who’s recent
                   focus has been in the core gaming sector where she has delved
                   deeper into worldbuilding and multifaceted art creation.
-                </h2>
-                <h2>
+                </h3>
+                <h3>
                   She developed a passion for creative communication as a kid -
                   creating documentaries, fine arts, and later with public
                   speaking, which continues to grow even now. To formalize her
                   skills, Neha pursued a Masters in Animation Degree from IIT
                   Bombay&apos;s Industrial Design Center.
-                </h2>
-                <h2>
+                </h3>
+                <h3>
                   Her creative journey in the industry evolved through work
                   experiences in illustration, advertising, and visual design,
                   gradually transitioning into animation and, ultimately,
                   finding her true passion in Concept Art.
-                </h2>
-                <h2>
+                </h3>
+                <h3>
                   She now lives in Bangalore, India, where she contributes her
                   talents to projects in the Entertainment Industry.
-                </h2>
-                <h2>
+                </h3>
+                <h3>
                   Beyond her professional endeavors, Neha is committed to
                   developing her digital content creation and product marketing
                   skills for personal branding across the digital landscape.
-                </h2>
-                <h2>
+                </h3>
+                <h3>
                   She actively shares her experiences and learning journey for
                   aspiring artists, on{" "}
                   <Link
@@ -56,24 +62,41 @@ const About = () => {
                     LinkedIn
                   </Link>
                   , with plans to expand her reach further.
-                </h2>
+                </h3>
               </div>
 
-              <div className="relative mx-auto h-fit w-full max-w-[500px] overflow-hidden rounded-md bg-neutral-700 md:w-1/3">
+              <div className="relative mx-auto h-fit w-full max-w-[500px] overflow-hidden rounded-md  md:w-1/3">
                 <Image
                   alt="Neha Rastogi"
                   className="mx-auto max-w-full object-cover object-center"
                   quality={95}
                   src={aboutImg}
+                  placeholder="blur"
                   // src={
                   //   "https://res.cloudinary.com/dywu7jrjp/image/upload/v1673533517/neha%20portfolio/about.jpg"
                   // }
                 />
               </div>
             </div>
-            <div className="space-y-10 pt-28 text-base text-neutral-300 md:text-xl">
+
+            <div className="pt-24 md:pt-36">
+              <h2 className="bg-gradient-to-b from-gold-90 to-yellow bg-clip-text text-center font-marcellus text-2xl font-bold uppercase tracking-widest text-transparent lg:text-3xl">
+                Past workspaces + clients
+              </h2>
+
+              <div className="mx-auto grid max-w-2xl grid-cols-2 place-items-center gap-5 pt-12 md:grid-cols-3 md:gap-10">
+                <Image src={volta} alt="Atmatva logo"></Image>
+                <Image src={atmatva} alt="Atmatva logo"></Image>
+                <Image src={zynga} alt="Atmatva logo"></Image>
+                <Image src={digitalDomain} alt="Atmatva logo"></Image>
+                <Image src={ogilvyMather} alt="Atmatva logo"></Image>
+                <Image src={myth} alt="Atmatva logo"></Image>
+              </div>
+            </div>
+
+            <div className="space-y-10 pt-24 text-base text-neutral-300 md:pt-40 md:text-xl">
               <div className="flex items-center gap-4 md:flex-row md:gap-8">
-                <FaInstagram className="text-xl md:block md:text-4xl" />
+                <FaInstagram className="xs:block hidden text-xl md:text-4xl" />
                 <div className="text-sm md:text-xl">
                   <p>Instagram:</p>
                   <Link
@@ -87,7 +110,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4 md:flex-row md:gap-8">
-                <FaArtstation className="text-xl md:block md:text-4xl" />
+                <FaArtstation className="xs:block hidden text-xl md:text-4xl" />
                 <div className="text-sm md:text-xl">
                   <p>ArtStation:</p>
                   <Link
@@ -101,7 +124,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4 md:flex-row md:gap-8">
-                <HiOutlineMail className="text-xl md:block md:text-4xl" />
+                <HiOutlineMail className="xs:block hidden text-xl md:text-4xl" />
                 <div className="text-sm md:text-xl">
                   <p>Email:</p>
                   <Link className="underline" href="mailto:art@neharastogi.com">
