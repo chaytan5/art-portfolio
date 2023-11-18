@@ -85,12 +85,24 @@ const About = () => {
               </h2>
 
               <div className="mx-auto grid max-w-2xl grid-cols-2 place-items-center gap-5 pt-12 md:grid-cols-3 md:gap-10">
-                <Image src={volta} alt="Atmatva logo"></Image>
-                <Image src={atmatva} alt="Atmatva logo"></Image>
-                <Image src={zynga} alt="Atmatva logo"></Image>
-                <Image src={digitalDomain} alt="Atmatva logo"></Image>
-                <Image src={ogilvyMather} alt="Atmatva logo"></Image>
-                <Image src={myth} alt="Atmatva logo"></Image>
+                <Image src={volta} placeholder="blur" alt="Volta logo"></Image>
+                <Image
+                  src={atmatva}
+                  placeholder="blur"
+                  alt="Atmatva logo"
+                ></Image>
+                <Image src={zynga} placeholder="blur" alt="Zynga logo"></Image>
+                <Image
+                  src={digitalDomain}
+                  placeholder="blur"
+                  alt="Digital domain logo"
+                ></Image>
+                <Image
+                  src={ogilvyMather}
+                  placeholder="blur"
+                  alt="Ogilvy and Mather logo"
+                ></Image>
+                <Image src={myth} placeholder="blur" alt="Myth logo"></Image>
               </div>
             </div>
 
