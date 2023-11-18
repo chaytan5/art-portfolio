@@ -33,6 +33,7 @@ module.exports = {
       },
       screens: {
         "1.5xl": "1440px",
+        xs: "320px",
       },
       height: {
         screen: ["100vh /* fallback for Opera, IE and etc. */", "100dvh"],
