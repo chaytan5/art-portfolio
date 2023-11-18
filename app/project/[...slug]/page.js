@@ -7,7 +7,7 @@ const ProjectPage = ({ params }) => {
   const currentProjectData = projectsData.filter(
     (project) => project.slug.toString() === slug.toString(),
   );
-  const { name, images } = currentProjectData[0];
+  const { name, images, description } = currentProjectData[0];
   return (
     <>
       <Link
@@ -29,12 +29,12 @@ const ProjectPage = ({ params }) => {
 
         <button className="text-lg underline ">Back to Projects</button>
       </Link>
-      <div className="flex flex-col-reverse items-start justify-between gap-5 pt-8 md:flex-row">
+      <div className="flex flex-col-reverse items-start justify-between gap-5 pb-32 pt-8 md:flex-row">
         <div className="w-full md:max-w-[75%]">
           <div className="space-y-5">
             {images.map((image) => (
               <Image
-                className="max-w-full bg-neutral-200"
+                className="max-w-full  bg-neutral-200"
                 key={image.id}
                 src={image.src}
                 width={image.width}
@@ -47,6 +47,7 @@ const ProjectPage = ({ params }) => {
         </div>
         <div className="w-full space-y-3 md:w-[25%]">
           <h2 className="text-2xl font-bold ">{name}</h2>
+          <p className="whitespace-pre-line text-neutral-900">{description}</p>
           {/* <p className="hidden md:block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
             asperiores quae mollitia assumenda, saepe iure nostrum sunt
